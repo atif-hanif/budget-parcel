@@ -139,1200 +139,605 @@
 	</header>
 	<main>
 		<div class="container mt-5">
-            <div class="row">
-                <div class="col-12">
-                    <h1>Find the best Freight Quote</h1>
-                    <ul class="nav nav-tabs parcel-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#rates">Rates</a>
-                        </li>
-                    </ul>
-                      
-                    <div class="tab-content mt-3">
-                        <div class="tab-pane active" id="rates">
-							<div class="card parcel-card">
-								<div class="card-body">
-									<form class="shipping-form home-form" method="get">
-										<div class="row">
-											<div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
-												<h5 class="section-head">Where are you sending your parcels from/to?</h5>
-												<ul class="nav nav-tabs imp-exp-tabs mb-3">
-													<li class="nav-item">
-														<a class="nav-link active float-left" data-toggle="tab" href="#export">Export</a>
-														<a class="nav-link float-right ml-2" data-toggle="tab" href="#import">Import</a>
-													</li>
-												</ul>
-												<ul class="nav nav-tabs pack-doc-tabs mb-3">
-													<li class="nav-item">
-														<a class="nav-link active float-left" data-toggle="tab" href="#package">Package</a>
-														<a class="nav-link float-right ml-2" data-toggle="tab" href="#document">Document</a>
-													</li>
-												</ul>
-												<div class="tab-content">
-													<div class="tab-pane active" id="export">
-														<div class="row">
-															<div class="col-lg-6">
-																<div class="form-group form-group-country group-country-from mb-0">
-																	<label for="export-from-country-select">From</label>
-																	<select id="export-from-country-select" class="select2 country-select">
-																		<option>Select a country</option>
-																		<option value="ES" data-zip="08001">Spain</option>
-																		<option value="IT" data-zip="10010">Italy</option>
-																		<option value="DE" data-zip="10117">Germany</option>
-																		<option value="FR" data-zip="75001">France</option>
-																		<option value="PT" data-zip="1000">Portugal</option>
-																		<option value="PL" data-zip="00001">Poland</option>
-																		<option value="IE" data-zip="">Ireland</option>
-																		<option value="NL" data-zip="1012">Netherlands</option>
-																		<option value="HU" data-zip="1051">Hungary</option>
-																		<option value="SE" data-zip="10316">Sweden</option>
-																		<option value="BE" data-zip="1000">Belgium</option>
-																		<option value="DK" data-zip="1050">Denmark</option>
-																		<option value="GR" data-zip="10431">Greece</option>
-																		<option value="LT" data-zip="06001">Lithuania</option>
-																		<option value="CZ" data-zip="10000">Czech Republic</option>
-																		<option value="RO" data-zip="010001">Romania</option>
-																		<option value="AT" data-zip="1010">Austria</option>
-																		<option value="HR" data-zip="10000">Croatia</option>
-																		<option value="FI" data-zip="00100">Finland</option>
-																		<option value="BG" data-zip="1000">Bulgaria</option>
-																		<option value="SK" data-zip="81103">Slovakia</option>
-																		<option value="GB" data-zip="">United Kingdom</option>
-																		<option value="EE" data-zip="10111">Estonia</option>
-																		<option value="LV" data-zip="1000">Latvia</option>
-																		<option value="SI" data-zip="1000">Slovenia</option>
-																		<option value="LU" data-zip="1232">Luxembourg</option>
-																		<option value="CH" data-zip="">Switzerland</option>
-																		<option value="US" data-zip="">United States</option>
-																		<option value="BR" data-zip="">Brazil</option>
-																		<option value="NO" data-zip="">Norway</option>
-																		<option value="AU" data-zip="">Australia</option>
-																		<option value="TR" data-zip="">Turkey</option>
-																		<option value="CA" data-zip="">Canada</option>
-																		<option value="CN" data-zip="">China</option>
-																		<option value="IN" data-zip="">India</option>
-																		<option value="MT" data-zip="">Malta</option>
-																		<option value="MA" data-zip="">Morocco</option>
-																		<option value="RS" data-zip="">Serbia</option>
-																		<option value="CY" data-zip="">Cyprus</option>
-																		<option value="MX" data-zip="">Mexico</option>
-																		<option value="CO" data-zip="">Colombia</option>
-																		<option value="AE" data-zip="">United Arab Emirates</option>
-																		<option value="GE" data-zip="">Georgia</option>
-																		<option value="IL" data-zip="">Israel</option>
-																		<option value="UA" data-zip="">Ukraine</option>
-																		<option value="CL" data-zip="">Chile</option>
-																		<option value="PK" data-zip="" selected>Pakistan</option>
-																		<option value="PE" data-zip="">Peru</option>
-																		<option value="KR" data-zip="">Korea, Republic of</option>
-																		<option value="RU" data-zip="">Russian Federation</option>
-																		<option value="ZA" data-zip="">South Africa</option>
-																		<option value="IS" data-zip="">Iceland</option>
-																		<option value="AL" data-zip="">Albania</option>
-																		<option value="TH" data-zip="">Thailand</option>
-																		<option value="TN" data-zip="">Tunisia</option>
-																		<option value="AR" data-zip="">Argentina</option>
-																		<option value="JP" data-zip="">Japan</option>
-																		<option value="BA" data-zip="">Bosnia and Herzegovina</option>
-																		<option value="PH" data-zip="">Philippines</option>
-																		<option value="MY" data-zip="">Malaysia</option>
-																		<option value="NZ" data-zip="">New Zealand</option>
-																		<option value="CU" data-zip="">Cuba</option>
-																		<option value="NP" data-zip="">Nepal</option>
-																		<option value="ME" data-zip="">Montenegro</option>
-																		<option value="SA" data-zip="">Saudi Arabia</option>
-																		<option value="MD" data-zip="">Moldova, Republic of</option>
-																		<option value="DZ" data-zip="">Algeria</option>
-																		<option value="EC" data-zip="">Ecuador</option>
-																		<option value="AM" data-zip="">Armenia</option>
-																		<option value="BY" data-zip="">Belarus</option>
-																		<option value="ID" data-zip="">Indonesia</option>
-																		<option value="BD" data-zip="">Bangladesh</option>
-																		<option value="QA" data-zip="">Qatar</option>
-																		<option value="SG" data-zip="">Singapore</option>
-																		<option value="VE" data-zip="">Venezuela, Bolivarian Republic of</option>
-																		<option value="AZ" data-zip="">Azerbaijan</option>
-																		<option value="MQ" data-zip="">Martinique</option>
-																		<option value="KZ" data-zip="">Kazakhstan</option>
-																		<option value="HK" data-zip="">Hong Kong</option>
-																		<option value="IR" data-zip="">Iran, Islamic Republic of</option>
-																		<option value="DO" data-zip="">Dominican Republic</option>
-																		<option value="MK" data-zip="">Macedonia, the former Yugoslav Republic of</option>
-																		<option value="CD" data-zip="">Congo, the Democratic Republic of the</option>
-																		<option value="PA" data-zip="">Panama</option>
-																		<option value="EG" data-zip="">Egypt</option>
-																		<option value="BO" data-zip="">Bolivia, Plurinational State of</option>
-																		<option value="TW" data-zip="">Taiwan, Province of China</option>
-																		<option value="GI" data-zip="">Gibraltar</option>
-																		<option value="MC" data-zip="">Monaco</option>
-																		<option value="NG" data-zip="">Nigeria</option>
-																		<option value="MF" data-zip="">Saint Martin</option>
-																		<option value="VN" data-zip="">Viet Nam</option>
-																		<option value="LK" data-zip="">Sri Lanka</option>
-																		<option value="AD" data-zip="">Andorra</option>
-																		<option value="BH" data-zip="">Bahrain</option>
-																		<option value="KE" data-zip="">Kenya</option>
-																		<option value="AN" data-zip="">Netherlands Antilles</option>
-																		<option value="UZ" data-zip="">Uzbekistan</option>
-																		<option value="AO" data-zip="">Angola</option>
-																		<option value="CV" data-zip="">Cape Verde</option>
-																		<option value="RE" data-zip="">Réunion</option>
-																		<option value="CR" data-zip="">Costa Rica</option>
-																		<option value="GH" data-zip="">Ghana</option>
-																		<option value="CM" data-zip="">Cameroon</option>
-																		<option value="GT" data-zip="">Guatemala</option>
-																		<option value="JO" data-zip="">Jordan</option>
-																		<option value="KW" data-zip="">Kuwait</option>
-																		<option value="PY" data-zip="">Paraguay</option>
-																		<option value="ZW" data-zip="">Zimbabwe</option>
-																		<option value="CI" data-zip="">Côte d&#39;Ivoire</option>
-																		<option value="IQ" data-zip="">Iraq</option>
-																		<option value="UY" data-zip="">Uruguay</option>
-																		<option value="PF" data-zip="">French Polynesia</option>
-																		<option value="GP" data-zip="">Guadeloupe</option>
-																		<option value="AF" data-zip="">Afghanistan</option>
-																		<option value="CG" data-zip="">Congo</option>
-																		<option value="JE" data-zip="">Jersey</option>
-																		<option value="SN" data-zip="">Senegal</option>
-																		<option value="SV" data-zip="">El Salvador</option>
-																		<option value="NE" data-zip="">Niger</option>
-																		<option value="PR" data-zip="">Puerto Rico</option>
-																		<option value="MG" data-zip="">Madagascar</option>
-																		<option value="MW" data-zip="">Malawi</option>
-																		<option value="SJ" data-zip="">Svalbard and Jan Mayen</option>
-																		<option value="SZ" data-zip="">Swaziland</option>
-																		<option value="SY" data-zip="">Syrian Arab Republic</option>
-																		<option value="KH" data-zip="">Cambodia</option>
-																		<option value="HN" data-zip="">Honduras</option>
-																		<option value="JM" data-zip="">Jamaica</option>
-																		<option value="KG" data-zip="">Kyrgyzstan</option>
-																		<option value="LB" data-zip="">Lebanon</option>
-																		<option value="LI" data-zip="">Liechtenstein</option>
-																		<option value="MR" data-zip="">Mauritania</option>
-																		<option value="MM" data-zip="">Myanmar</option>
-																		<option value="OM" data-zip="">Oman</option>
-																		<option value="BT" data-zip="">Bhutan</option>
-																		<option value="TD" data-zip="">Chad</option>
-																		<option value="LA" data-zip="">Lao People&#39;s Democratic Republic</option>
-																		<option value="LY" data-zip="">Libyan Arab Jamahiriya</option>
-																		<option value="ML" data-zip="">Mali</option>
-																		<option value="SR" data-zip="">Suriname</option>
-																		<option value="TG" data-zip="">Togo</option>
-																		<option value="UG" data-zip="">Uganda</option>
-																		<option value="VI" data-zip="">Virgin Islands, U.S.</option>
-																		<option value="ZM" data-zip="">Zambia</option>
-																		<option value="AG" data-zip="">Antigua and Barbuda</option>
-																		<option value="GQ" data-zip="">Equatorial Guinea</option>
-																		<option value="ET" data-zip="">Ethiopia</option>
-																		<option value="GM" data-zip="">Gambia</option>
-																		<option value="GD" data-zip="">Grenada</option>
-																		<option value="GN" data-zip="">Guinea</option>
-																		<option value="MU" data-zip="">Mauritius</option>
-																		<option value="MN" data-zip="">Mongolia</option>
-																		<option value="MZ" data-zip="">Mozambique</option>
-																		<option value="NA" data-zip="">Namibia</option>
-																		<option value="SM" data-zip="">San Marino</option>
-																		<option value="SL" data-zip="">Sierra Leone</option>
-																		<option value="TC" data-zip="">Turks and Caicos Islands</option>
-																		<option value="EH" data-zip="">Western Sahara</option>
-																		<option value="AX" data-zip="">Åland Islands</option>
-																		<option value="AW" data-zip="">Aruba</option>
-																		<option value="BB" data-zip="">Barbados</option>
-																		<option value="BJ" data-zip="">Benin</option>
-																		<option value="IO" data-zip="">British Indian Ocean Territory</option>
-																		<option value="CF" data-zip="">Central African Republic</option>
-																		<option value="DM" data-zip="">Dominica</option>
-																		<option value="FO" data-zip="">Faroe Islands</option>
-																		<option value="TF" data-zip="">French Southern Territories</option>
-																		<option value="GL" data-zip="">Greenland</option>
-																		<option value="GY" data-zip="">Guyana</option>
-																		<option value="VA" data-zip="">Holy See (Vatican City State)</option>
-																		<option value="MO" data-zip="">Macao</option>
-																		<option value="MV" data-zip="">Maldives</option>
-																		<option value="FM" data-zip="">Micronesia, Federated States of</option>
-																		<option value="MS" data-zip="">Montserrat</option>
-																		<option value="NC" data-zip="">New Caledonia</option>
-																		<option value="NI" data-zip="">Nicaragua</option>
-																		<option value="NF" data-zip="">Norfolk Island</option>
-																		<option value="PG" data-zip="">Papua New Guinea</option>
-																		<option value="RW" data-zip="">Rwanda</option>
-																		<option value="SC" data-zip="">Seychelles</option>
-																		<option value="SO" data-zip="">Somalia</option>
-																		<option value="SD" data-zip="">Sudan</option>
-																		<option value="TJ" data-zip="">Tajikistan</option>
-																		<option value="TZ" data-zip="">Tanzania, United Republic of</option>
-																		<option value="TM" data-zip="">Turkmenistan</option>
-																		<option value="UM" data-zip="">United States Minor Outlying Islands</option>
-																		<option value="WF" data-zip="">Wallis and Futuna</option>
-																		<option value="YE" data-zip="">Yemen</option>
-																		<option value="AS" data-zip="">American Samoa</option>
-																		<option value="AI" data-zip="">Anguilla</option>
-																		<option value="AQ" data-zip="">Antarctica</option>
-																		<option value="BS" data-zip="">Bahamas</option>
-																		<option value="BZ" data-zip="">Belize</option>
-																		<option value="BM" data-zip="">Bermuda</option>
-																		<option value="BW" data-zip="">Botswana</option>
-																		<option value="BV" data-zip="">Bouvet Island</option>
-																		<option value="BN" data-zip="">Brunei Darussalam</option>
-																		<option value="BF" data-zip="">Burkina Faso</option>
-																		<option value="BI" data-zip="">Burundi</option>
-																		<option value="KY" data-zip="">Cayman Islands</option>
-																		<option value="CX" data-zip="">Christmas Island</option>
-																		<option value="CC" data-zip="">Cocos (Keeling) Islands</option>
-																		<option value="KM" data-zip="">Comoros</option>
-																		<option value="CK" data-zip="">Cook Islands</option>
-																		<option value="DJ" data-zip="">Djibouti</option>
-																		<option value="ER" data-zip="">Eritrea</option>
-																		<option value="FK" data-zip="">Falkland Islands (Malvinas)</option>
-																		<option value="FJ" data-zip="">Fiji</option>
-																		<option value="GF" data-zip="">French Guiana</option>
-																		<option value="GA" data-zip="">Gabon</option>
-																		<option value="GU" data-zip="">Guam</option>
-																		<option value="GG" data-zip="">Guernsey</option>
-																		<option value="GW" data-zip="">Guinea-Bissau</option>
-																		<option value="HT" data-zip="">Haiti</option>
-																		<option value="HM" data-zip="">Heard Island and McDonald Islands</option>
-																		<option value="IM" data-zip="">Isle of Man</option>
-																		<option value="KI" data-zip="">Kiribati</option>
-																		<option value="LS" data-zip="">Lesotho</option>
-																		<option value="LR" data-zip="">Liberia</option>
-																		<option value="MH" data-zip="">Marshall Islands</option>
-																		<option value="YT" data-zip="">Mayotte</option>
-																		<option value="NR" data-zip="">Nauru</option>
-																		<option value="NU" data-zip="">Niue</option>
-																		<option value="MP" data-zip="">Northern Mariana Islands</option>
-																		<option value="PW" data-zip="">Palau</option>
-																		<option value="PS" data-zip="">Palestinian Territory, Occupied</option>
-																		<option value="PN" data-zip="">Pitcairn</option>
-																		<option value="BL" data-zip="">Saint Barthélemy</option>
-																		<option value="SH" data-zip="">Saint Helena</option>
-																		<option value="KN" data-zip="">Saint Kitts and Nevis</option>
-																		<option value="LC" data-zip="">Saint Lucia</option>
-																		<option value="PM" data-zip="">Saint Pierre and Miquelon</option>
-																		<option value="VC" data-zip="">Saint Vincent and the Grenadines</option>
-																		<option value="WS" data-zip="">Samoa</option>
-																		<option value="ST" data-zip="">Sao Tome and Principe</option>
-																		<option value="SB" data-zip="">Solomon Islands</option>
-																		<option value="GS" data-zip="">South Georgia and the South Sandwich Islands</option>
-																		<option value="TL" data-zip="">Timor-Leste</option>
-																		<option value="TK" data-zip="">Tokelau</option>
-																		<option value="TO" data-zip="">Tonga</option>
-																		<option value="TT" data-zip="">Trinidad and Tobago</option>
-																		<option value="TV" data-zip="">Tuvalu</option>
-																		<option value="VU" data-zip="">Vanuatu</option>
-																		<option value="VG" data-zip="">Virgin Islands, British</option>
-																	</select>
-																</div>
-															</div>
-															<div class="col-lg-6 mt-3 mt-lg-0">
-																<div class="form-group form-group-country mb-0">
-																	<label for="export-to-country-select">To</label>
-																	<select id="export-to-country-select" class="select2 country-select">
-																		<option>Select a country</option>
-																		<option value="ES" data-zip="08001" selected>Spain</option>
-																		<option value="IT" data-zip="10010">Italy</option>
-																		<option value="DE" data-zip="10117">Germany</option>
-																		<option value="FR" data-zip="75001">France</option>
-																		<option value="PT" data-zip="1000">Portugal</option>
-																		<option value="PL" data-zip="00001">Poland</option>
-																		<option value="IE" data-zip="">Ireland</option>
-																		<option value="NL" data-zip="1012">Netherlands</option>
-																		<option value="HU" data-zip="1051">Hungary</option>
-																		<option value="SE" data-zip="10316">Sweden</option>
-																		<option value="BE" data-zip="1000">Belgium</option>
-																		<option value="DK" data-zip="1050">Denmark</option>
-																		<option value="GR" data-zip="10431">Greece</option>
-																		<option value="LT" data-zip="06001">Lithuania</option>
-																		<option value="CZ" data-zip="10000">Czech Republic</option>
-																		<option value="RO" data-zip="010001">Romania</option>
-																		<option value="AT" data-zip="1010">Austria</option>
-																		<option value="HR" data-zip="10000">Croatia</option>
-																		<option value="FI" data-zip="00100">Finland</option>
-																		<option value="BG" data-zip="1000">Bulgaria</option>
-																		<option value="SK" data-zip="81103">Slovakia</option>
-																		<option value="GB" data-zip="">United Kingdom</option>
-																		<option value="EE" data-zip="10111">Estonia</option>
-																		<option value="LV" data-zip="1000">Latvia</option>
-																		<option value="SI" data-zip="1000">Slovenia</option>
-																		<option value="LU" data-zip="1232">Luxembourg</option>
-																		<option value="CH" data-zip="">Switzerland</option>
-																		<option value="US" data-zip="">United States</option>
-																		<option value="BR" data-zip="">Brazil</option>
-																		<option value="NO" data-zip="">Norway</option>
-																		<option value="AU" data-zip="">Australia</option>
-																		<option value="TR" data-zip="">Turkey</option>
-																		<option value="CA" data-zip="">Canada</option>
-																		<option value="CN" data-zip="">China</option>
-																		<option value="IN" data-zip="">India</option>
-																		<option value="MT" data-zip="">Malta</option>
-																		<option value="MA" data-zip="">Morocco</option>
-																		<option value="RS" data-zip="">Serbia</option>
-																		<option value="CY" data-zip="">Cyprus</option>
-																		<option value="MX" data-zip="">Mexico</option>
-																		<option value="CO" data-zip="">Colombia</option>
-																		<option value="AE" data-zip="">United Arab Emirates</option>
-																		<option value="GE" data-zip="">Georgia</option>
-																		<option value="IL" data-zip="">Israel</option>
-																		<option value="UA" data-zip="">Ukraine</option>
-																		<option value="CL" data-zip="">Chile</option>
-																		<option value="PK" data-zip="">Pakistan</option>
-																		<option value="PE" data-zip="">Peru</option>
-																		<option value="KR" data-zip="">Korea, Republic of</option>
-																		<option value="RU" data-zip="">Russian Federation</option>
-																		<option value="ZA" data-zip="">South Africa</option>
-																		<option value="IS" data-zip="">Iceland</option>
-																		<option value="AL" data-zip="">Albania</option>
-																		<option value="TH" data-zip="">Thailand</option>
-																		<option value="TN" data-zip="">Tunisia</option>
-																		<option value="AR" data-zip="">Argentina</option>
-																		<option value="JP" data-zip="">Japan</option>
-																		<option value="BA" data-zip="">Bosnia and Herzegovina</option>
-																		<option value="PH" data-zip="">Philippines</option>
-																		<option value="MY" data-zip="">Malaysia</option>
-																		<option value="NZ" data-zip="">New Zealand</option>
-																		<option value="CU" data-zip="">Cuba</option>
-																		<option value="NP" data-zip="">Nepal</option>
-																		<option value="ME" data-zip="">Montenegro</option>
-																		<option value="SA" data-zip="">Saudi Arabia</option>
-																		<option value="MD" data-zip="">Moldova, Republic of</option>
-																		<option value="DZ" data-zip="">Algeria</option>
-																		<option value="EC" data-zip="">Ecuador</option>
-																		<option value="AM" data-zip="">Armenia</option>
-																		<option value="BY" data-zip="">Belarus</option>
-																		<option value="ID" data-zip="">Indonesia</option>
-																		<option value="BD" data-zip="">Bangladesh</option>
-																		<option value="QA" data-zip="">Qatar</option>
-																		<option value="SG" data-zip="">Singapore</option>
-																		<option value="VE" data-zip="">Venezuela, Bolivarian Republic of</option>
-																		<option value="AZ" data-zip="">Azerbaijan</option>
-																		<option value="MQ" data-zip="">Martinique</option>
-																		<option value="KZ" data-zip="">Kazakhstan</option>
-																		<option value="HK" data-zip="">Hong Kong</option>
-																		<option value="IR" data-zip="">Iran, Islamic Republic of</option>
-																		<option value="DO" data-zip="">Dominican Republic</option>
-																		<option value="MK" data-zip="">Macedonia, the former Yugoslav Republic of</option>
-																		<option value="CD" data-zip="">Congo, the Democratic Republic of the</option>
-																		<option value="PA" data-zip="">Panama</option>
-																		<option value="EG" data-zip="">Egypt</option>
-																		<option value="BO" data-zip="">Bolivia, Plurinational State of</option>
-																		<option value="TW" data-zip="">Taiwan, Province of China</option>
-																		<option value="GI" data-zip="">Gibraltar</option>
-																		<option value="MC" data-zip="">Monaco</option>
-																		<option value="NG" data-zip="">Nigeria</option>
-																		<option value="MF" data-zip="">Saint Martin</option>
-																		<option value="VN" data-zip="">Viet Nam</option>
-																		<option value="LK" data-zip="">Sri Lanka</option>
-																		<option value="AD" data-zip="">Andorra</option>
-																		<option value="BH" data-zip="">Bahrain</option>
-																		<option value="KE" data-zip="">Kenya</option>
-																		<option value="AN" data-zip="">Netherlands Antilles</option>
-																		<option value="UZ" data-zip="">Uzbekistan</option>
-																		<option value="AO" data-zip="">Angola</option>
-																		<option value="CV" data-zip="">Cape Verde</option>
-																		<option value="RE" data-zip="">Réunion</option>
-																		<option value="CR" data-zip="">Costa Rica</option>
-																		<option value="GH" data-zip="">Ghana</option>
-																		<option value="CM" data-zip="">Cameroon</option>
-																		<option value="GT" data-zip="">Guatemala</option>
-																		<option value="JO" data-zip="">Jordan</option>
-																		<option value="KW" data-zip="">Kuwait</option>
-																		<option value="PY" data-zip="">Paraguay</option>
-																		<option value="ZW" data-zip="">Zimbabwe</option>
-																		<option value="CI" data-zip="">Côte d&#39;Ivoire</option>
-																		<option value="IQ" data-zip="">Iraq</option>
-																		<option value="UY" data-zip="">Uruguay</option>
-																		<option value="PF" data-zip="">French Polynesia</option>
-																		<option value="GP" data-zip="">Guadeloupe</option>
-																		<option value="AF" data-zip="">Afghanistan</option>
-																		<option value="CG" data-zip="">Congo</option>
-																		<option value="JE" data-zip="">Jersey</option>
-																		<option value="SN" data-zip="">Senegal</option>
-																		<option value="SV" data-zip="">El Salvador</option>
-																		<option value="NE" data-zip="">Niger</option>
-																		<option value="PR" data-zip="">Puerto Rico</option>
-																		<option value="MG" data-zip="">Madagascar</option>
-																		<option value="MW" data-zip="">Malawi</option>
-																		<option value="SJ" data-zip="">Svalbard and Jan Mayen</option>
-																		<option value="SZ" data-zip="">Swaziland</option>
-																		<option value="SY" data-zip="">Syrian Arab Republic</option>
-																		<option value="KH" data-zip="">Cambodia</option>
-																		<option value="HN" data-zip="">Honduras</option>
-																		<option value="JM" data-zip="">Jamaica</option>
-																		<option value="KG" data-zip="">Kyrgyzstan</option>
-																		<option value="LB" data-zip="">Lebanon</option>
-																		<option value="LI" data-zip="">Liechtenstein</option>
-																		<option value="MR" data-zip="">Mauritania</option>
-																		<option value="MM" data-zip="">Myanmar</option>
-																		<option value="OM" data-zip="">Oman</option>
-																		<option value="BT" data-zip="">Bhutan</option>
-																		<option value="TD" data-zip="">Chad</option>
-																		<option value="LA" data-zip="">Lao People&#39;s Democratic Republic</option>
-																		<option value="LY" data-zip="">Libyan Arab Jamahiriya</option>
-																		<option value="ML" data-zip="">Mali</option>
-																		<option value="SR" data-zip="">Suriname</option>
-																		<option value="TG" data-zip="">Togo</option>
-																		<option value="UG" data-zip="">Uganda</option>
-																		<option value="VI" data-zip="">Virgin Islands, U.S.</option>
-																		<option value="ZM" data-zip="">Zambia</option>
-																		<option value="AG" data-zip="">Antigua and Barbuda</option>
-																		<option value="GQ" data-zip="">Equatorial Guinea</option>
-																		<option value="ET" data-zip="">Ethiopia</option>
-																		<option value="GM" data-zip="">Gambia</option>
-																		<option value="GD" data-zip="">Grenada</option>
-																		<option value="GN" data-zip="">Guinea</option>
-																		<option value="MU" data-zip="">Mauritius</option>
-																		<option value="MN" data-zip="">Mongolia</option>
-																		<option value="MZ" data-zip="">Mozambique</option>
-																		<option value="NA" data-zip="">Namibia</option>
-																		<option value="SM" data-zip="">San Marino</option>
-																		<option value="SL" data-zip="">Sierra Leone</option>
-																		<option value="TC" data-zip="">Turks and Caicos Islands</option>
-																		<option value="EH" data-zip="">Western Sahara</option>
-																		<option value="AX" data-zip="">Åland Islands</option>
-																		<option value="AW" data-zip="">Aruba</option>
-																		<option value="BB" data-zip="">Barbados</option>
-																		<option value="BJ" data-zip="">Benin</option>
-																		<option value="IO" data-zip="">British Indian Ocean Territory</option>
-																		<option value="CF" data-zip="">Central African Republic</option>
-																		<option value="DM" data-zip="">Dominica</option>
-																		<option value="FO" data-zip="">Faroe Islands</option>
-																		<option value="TF" data-zip="">French Southern Territories</option>
-																		<option value="GL" data-zip="">Greenland</option>
-																		<option value="GY" data-zip="">Guyana</option>
-																		<option value="VA" data-zip="">Holy See (Vatican City State)</option>
-																		<option value="MO" data-zip="">Macao</option>
-																		<option value="MV" data-zip="">Maldives</option>
-																		<option value="FM" data-zip="">Micronesia, Federated States of</option>
-																		<option value="MS" data-zip="">Montserrat</option>
-																		<option value="NC" data-zip="">New Caledonia</option>
-																		<option value="NI" data-zip="">Nicaragua</option>
-																		<option value="NF" data-zip="">Norfolk Island</option>
-																		<option value="PG" data-zip="">Papua New Guinea</option>
-																		<option value="RW" data-zip="">Rwanda</option>
-																		<option value="SC" data-zip="">Seychelles</option>
-																		<option value="SO" data-zip="">Somalia</option>
-																		<option value="SD" data-zip="">Sudan</option>
-																		<option value="TJ" data-zip="">Tajikistan</option>
-																		<option value="TZ" data-zip="">Tanzania, United Republic of</option>
-																		<option value="TM" data-zip="">Turkmenistan</option>
-																		<option value="UM" data-zip="">United States Minor Outlying Islands</option>
-																		<option value="WF" data-zip="">Wallis and Futuna</option>
-																		<option value="YE" data-zip="">Yemen</option>
-																		<option value="AS" data-zip="">American Samoa</option>
-																		<option value="AI" data-zip="">Anguilla</option>
-																		<option value="AQ" data-zip="">Antarctica</option>
-																		<option value="BS" data-zip="">Bahamas</option>
-																		<option value="BZ" data-zip="">Belize</option>
-																		<option value="BM" data-zip="">Bermuda</option>
-																		<option value="BW" data-zip="">Botswana</option>
-																		<option value="BV" data-zip="">Bouvet Island</option>
-																		<option value="BN" data-zip="">Brunei Darussalam</option>
-																		<option value="BF" data-zip="">Burkina Faso</option>
-																		<option value="BI" data-zip="">Burundi</option>
-																		<option value="KY" data-zip="">Cayman Islands</option>
-																		<option value="CX" data-zip="">Christmas Island</option>
-																		<option value="CC" data-zip="">Cocos (Keeling) Islands</option>
-																		<option value="KM" data-zip="">Comoros</option>
-																		<option value="CK" data-zip="">Cook Islands</option>
-																		<option value="DJ" data-zip="">Djibouti</option>
-																		<option value="ER" data-zip="">Eritrea</option>
-																		<option value="FK" data-zip="">Falkland Islands (Malvinas)</option>
-																		<option value="FJ" data-zip="">Fiji</option>
-																		<option value="GF" data-zip="">French Guiana</option>
-																		<option value="GA" data-zip="">Gabon</option>
-																		<option value="GU" data-zip="">Guam</option>
-																		<option value="GG" data-zip="">Guernsey</option>
-																		<option value="GW" data-zip="">Guinea-Bissau</option>
-																		<option value="HT" data-zip="">Haiti</option>
-																		<option value="HM" data-zip="">Heard Island and McDonald Islands</option>
-																		<option value="IM" data-zip="">Isle of Man</option>
-																		<option value="KI" data-zip="">Kiribati</option>
-																		<option value="LS" data-zip="">Lesotho</option>
-																		<option value="LR" data-zip="">Liberia</option>
-																		<option value="MH" data-zip="">Marshall Islands</option>
-																		<option value="YT" data-zip="">Mayotte</option>
-																		<option value="NR" data-zip="">Nauru</option>
-																		<option value="NU" data-zip="">Niue</option>
-																		<option value="MP" data-zip="">Northern Mariana Islands</option>
-																		<option value="PW" data-zip="">Palau</option>
-																		<option value="PS" data-zip="">Palestinian Territory, Occupied</option>
-																		<option value="PN" data-zip="">Pitcairn</option>
-																		<option value="BL" data-zip="">Saint Barthélemy</option>
-																		<option value="SH" data-zip="">Saint Helena</option>
-																		<option value="KN" data-zip="">Saint Kitts and Nevis</option>
-																		<option value="LC" data-zip="">Saint Lucia</option>
-																		<option value="PM" data-zip="">Saint Pierre and Miquelon</option>
-																		<option value="VC" data-zip="">Saint Vincent and the Grenadines</option>
-																		<option value="WS" data-zip="">Samoa</option>
-																		<option value="ST" data-zip="">Sao Tome and Principe</option>
-																		<option value="SB" data-zip="">Solomon Islands</option>
-																		<option value="GS" data-zip="">South Georgia and the South Sandwich Islands</option>
-																		<option value="TL" data-zip="">Timor-Leste</option>
-																		<option value="TK" data-zip="">Tokelau</option>
-																		<option value="TO" data-zip="">Tonga</option>
-																		<option value="TT" data-zip="">Trinidad and Tobago</option>
-																		<option value="TV" data-zip="">Tuvalu</option>
-																		<option value="VU" data-zip="">Vanuatu</option>
-																		<option value="VG" data-zip="">Virgin Islands, British</option>
-																	</select>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="tab-pane container fade" id="export">
-														<div class="row">
-															<div class="col-lg-6">
-																<div class="form-group form-group-country group-country-from mb-0">
-																	<label for="import-from-country-select">From</label>
-																	<select id="import-from-country-select" class="select2 country-select">
-																		<option>Select a country</option>
-																		<option value="ES" data-zip="08001">Spain</option>
-																		<option value="IT" data-zip="10010">Italy</option>
-																		<option value="DE" data-zip="10117">Germany</option>
-																		<option value="FR" data-zip="75001">France</option>
-																		<option value="PT" data-zip="1000">Portugal</option>
-																		<option value="PL" data-zip="00001">Poland</option>
-																		<option value="IE" data-zip="">Ireland</option>
-																		<option value="NL" data-zip="1012">Netherlands</option>
-																		<option value="HU" data-zip="1051">Hungary</option>
-																		<option value="SE" data-zip="10316">Sweden</option>
-																		<option value="BE" data-zip="1000">Belgium</option>
-																		<option value="DK" data-zip="1050">Denmark</option>
-																		<option value="GR" data-zip="10431">Greece</option>
-																		<option value="LT" data-zip="06001">Lithuania</option>
-																		<option value="CZ" data-zip="10000">Czech Republic</option>
-																		<option value="RO" data-zip="010001">Romania</option>
-																		<option value="AT" data-zip="1010">Austria</option>
-																		<option value="HR" data-zip="10000">Croatia</option>
-																		<option value="FI" data-zip="00100">Finland</option>
-																		<option value="BG" data-zip="1000">Bulgaria</option>
-																		<option value="SK" data-zip="81103">Slovakia</option>
-																		<option value="GB" data-zip="">United Kingdom</option>
-																		<option value="EE" data-zip="10111">Estonia</option>
-																		<option value="LV" data-zip="1000">Latvia</option>
-																		<option value="SI" data-zip="1000">Slovenia</option>
-																		<option value="LU" data-zip="1232">Luxembourg</option>
-																		<option value="CH" data-zip="">Switzerland</option>
-																		<option value="US" data-zip="">United States</option>
-																		<option value="BR" data-zip="">Brazil</option>
-																		<option value="NO" data-zip="">Norway</option>
-																		<option value="AU" data-zip="">Australia</option>
-																		<option value="TR" data-zip="">Turkey</option>
-																		<option value="CA" data-zip="">Canada</option>
-																		<option value="CN" data-zip="">China</option>
-																		<option value="IN" data-zip="">India</option>
-																		<option value="MT" data-zip="">Malta</option>
-																		<option value="MA" data-zip="">Morocco</option>
-																		<option value="RS" data-zip="">Serbia</option>
-																		<option value="CY" data-zip="">Cyprus</option>
-																		<option value="MX" data-zip="">Mexico</option>
-																		<option value="CO" data-zip="">Colombia</option>
-																		<option value="AE" data-zip="">United Arab Emirates</option>
-																		<option value="GE" data-zip="">Georgia</option>
-																		<option value="IL" data-zip="">Israel</option>
-																		<option value="UA" data-zip="">Ukraine</option>
-																		<option value="CL" data-zip="">Chile</option>
-																		<option value="PK" data-zip="" selected>Pakistan</option>
-																		<option value="PE" data-zip="">Peru</option>
-																		<option value="KR" data-zip="">Korea, Republic of</option>
-																		<option value="RU" data-zip="">Russian Federation</option>
-																		<option value="ZA" data-zip="">South Africa</option>
-																		<option value="IS" data-zip="">Iceland</option>
-																		<option value="AL" data-zip="">Albania</option>
-																		<option value="TH" data-zip="">Thailand</option>
-																		<option value="TN" data-zip="">Tunisia</option>
-																		<option value="AR" data-zip="">Argentina</option>
-																		<option value="JP" data-zip="">Japan</option>
-																		<option value="BA" data-zip="">Bosnia and Herzegovina</option>
-																		<option value="PH" data-zip="">Philippines</option>
-																		<option value="MY" data-zip="">Malaysia</option>
-																		<option value="NZ" data-zip="">New Zealand</option>
-																		<option value="CU" data-zip="">Cuba</option>
-																		<option value="NP" data-zip="">Nepal</option>
-																		<option value="ME" data-zip="">Montenegro</option>
-																		<option value="SA" data-zip="">Saudi Arabia</option>
-																		<option value="MD" data-zip="">Moldova, Republic of</option>
-																		<option value="DZ" data-zip="">Algeria</option>
-																		<option value="EC" data-zip="">Ecuador</option>
-																		<option value="AM" data-zip="">Armenia</option>
-																		<option value="BY" data-zip="">Belarus</option>
-																		<option value="ID" data-zip="">Indonesia</option>
-																		<option value="BD" data-zip="">Bangladesh</option>
-																		<option value="QA" data-zip="">Qatar</option>
-																		<option value="SG" data-zip="">Singapore</option>
-																		<option value="VE" data-zip="">Venezuela, Bolivarian Republic of</option>
-																		<option value="AZ" data-zip="">Azerbaijan</option>
-																		<option value="MQ" data-zip="">Martinique</option>
-																		<option value="KZ" data-zip="">Kazakhstan</option>
-																		<option value="HK" data-zip="">Hong Kong</option>
-																		<option value="IR" data-zip="">Iran, Islamic Republic of</option>
-																		<option value="DO" data-zip="">Dominican Republic</option>
-																		<option value="MK" data-zip="">Macedonia, the former Yugoslav Republic of</option>
-																		<option value="CD" data-zip="">Congo, the Democratic Republic of the</option>
-																		<option value="PA" data-zip="">Panama</option>
-																		<option value="EG" data-zip="">Egypt</option>
-																		<option value="BO" data-zip="">Bolivia, Plurinational State of</option>
-																		<option value="TW" data-zip="">Taiwan, Province of China</option>
-																		<option value="GI" data-zip="">Gibraltar</option>
-																		<option value="MC" data-zip="">Monaco</option>
-																		<option value="NG" data-zip="">Nigeria</option>
-																		<option value="MF" data-zip="">Saint Martin</option>
-																		<option value="VN" data-zip="">Viet Nam</option>
-																		<option value="LK" data-zip="">Sri Lanka</option>
-																		<option value="AD" data-zip="">Andorra</option>
-																		<option value="BH" data-zip="">Bahrain</option>
-																		<option value="KE" data-zip="">Kenya</option>
-																		<option value="AN" data-zip="">Netherlands Antilles</option>
-																		<option value="UZ" data-zip="">Uzbekistan</option>
-																		<option value="AO" data-zip="">Angola</option>
-																		<option value="CV" data-zip="">Cape Verde</option>
-																		<option value="RE" data-zip="">Réunion</option>
-																		<option value="CR" data-zip="">Costa Rica</option>
-																		<option value="GH" data-zip="">Ghana</option>
-																		<option value="CM" data-zip="">Cameroon</option>
-																		<option value="GT" data-zip="">Guatemala</option>
-																		<option value="JO" data-zip="">Jordan</option>
-																		<option value="KW" data-zip="">Kuwait</option>
-																		<option value="PY" data-zip="">Paraguay</option>
-																		<option value="ZW" data-zip="">Zimbabwe</option>
-																		<option value="CI" data-zip="">Côte d&#39;Ivoire</option>
-																		<option value="IQ" data-zip="">Iraq</option>
-																		<option value="UY" data-zip="">Uruguay</option>
-																		<option value="PF" data-zip="">French Polynesia</option>
-																		<option value="GP" data-zip="">Guadeloupe</option>
-																		<option value="AF" data-zip="">Afghanistan</option>
-																		<option value="CG" data-zip="">Congo</option>
-																		<option value="JE" data-zip="">Jersey</option>
-																		<option value="SN" data-zip="">Senegal</option>
-																		<option value="SV" data-zip="">El Salvador</option>
-																		<option value="NE" data-zip="">Niger</option>
-																		<option value="PR" data-zip="">Puerto Rico</option>
-																		<option value="MG" data-zip="">Madagascar</option>
-																		<option value="MW" data-zip="">Malawi</option>
-																		<option value="SJ" data-zip="">Svalbard and Jan Mayen</option>
-																		<option value="SZ" data-zip="">Swaziland</option>
-																		<option value="SY" data-zip="">Syrian Arab Republic</option>
-																		<option value="KH" data-zip="">Cambodia</option>
-																		<option value="HN" data-zip="">Honduras</option>
-																		<option value="JM" data-zip="">Jamaica</option>
-																		<option value="KG" data-zip="">Kyrgyzstan</option>
-																		<option value="LB" data-zip="">Lebanon</option>
-																		<option value="LI" data-zip="">Liechtenstein</option>
-																		<option value="MR" data-zip="">Mauritania</option>
-																		<option value="MM" data-zip="">Myanmar</option>
-																		<option value="OM" data-zip="">Oman</option>
-																		<option value="BT" data-zip="">Bhutan</option>
-																		<option value="TD" data-zip="">Chad</option>
-																		<option value="LA" data-zip="">Lao People&#39;s Democratic Republic</option>
-																		<option value="LY" data-zip="">Libyan Arab Jamahiriya</option>
-																		<option value="ML" data-zip="">Mali</option>
-																		<option value="SR" data-zip="">Suriname</option>
-																		<option value="TG" data-zip="">Togo</option>
-																		<option value="UG" data-zip="">Uganda</option>
-																		<option value="VI" data-zip="">Virgin Islands, U.S.</option>
-																		<option value="ZM" data-zip="">Zambia</option>
-																		<option value="AG" data-zip="">Antigua and Barbuda</option>
-																		<option value="GQ" data-zip="">Equatorial Guinea</option>
-																		<option value="ET" data-zip="">Ethiopia</option>
-																		<option value="GM" data-zip="">Gambia</option>
-																		<option value="GD" data-zip="">Grenada</option>
-																		<option value="GN" data-zip="">Guinea</option>
-																		<option value="MU" data-zip="">Mauritius</option>
-																		<option value="MN" data-zip="">Mongolia</option>
-																		<option value="MZ" data-zip="">Mozambique</option>
-																		<option value="NA" data-zip="">Namibia</option>
-																		<option value="SM" data-zip="">San Marino</option>
-																		<option value="SL" data-zip="">Sierra Leone</option>
-																		<option value="TC" data-zip="">Turks and Caicos Islands</option>
-																		<option value="EH" data-zip="">Western Sahara</option>
-																		<option value="AX" data-zip="">Åland Islands</option>
-																		<option value="AW" data-zip="">Aruba</option>
-																		<option value="BB" data-zip="">Barbados</option>
-																		<option value="BJ" data-zip="">Benin</option>
-																		<option value="IO" data-zip="">British Indian Ocean Territory</option>
-																		<option value="CF" data-zip="">Central African Republic</option>
-																		<option value="DM" data-zip="">Dominica</option>
-																		<option value="FO" data-zip="">Faroe Islands</option>
-																		<option value="TF" data-zip="">French Southern Territories</option>
-																		<option value="GL" data-zip="">Greenland</option>
-																		<option value="GY" data-zip="">Guyana</option>
-																		<option value="VA" data-zip="">Holy See (Vatican City State)</option>
-																		<option value="MO" data-zip="">Macao</option>
-																		<option value="MV" data-zip="">Maldives</option>
-																		<option value="FM" data-zip="">Micronesia, Federated States of</option>
-																		<option value="MS" data-zip="">Montserrat</option>
-																		<option value="NC" data-zip="">New Caledonia</option>
-																		<option value="NI" data-zip="">Nicaragua</option>
-																		<option value="NF" data-zip="">Norfolk Island</option>
-																		<option value="PG" data-zip="">Papua New Guinea</option>
-																		<option value="RW" data-zip="">Rwanda</option>
-																		<option value="SC" data-zip="">Seychelles</option>
-																		<option value="SO" data-zip="">Somalia</option>
-																		<option value="SD" data-zip="">Sudan</option>
-																		<option value="TJ" data-zip="">Tajikistan</option>
-																		<option value="TZ" data-zip="">Tanzania, United Republic of</option>
-																		<option value="TM" data-zip="">Turkmenistan</option>
-																		<option value="UM" data-zip="">United States Minor Outlying Islands</option>
-																		<option value="WF" data-zip="">Wallis and Futuna</option>
-																		<option value="YE" data-zip="">Yemen</option>
-																		<option value="AS" data-zip="">American Samoa</option>
-																		<option value="AI" data-zip="">Anguilla</option>
-																		<option value="AQ" data-zip="">Antarctica</option>
-																		<option value="BS" data-zip="">Bahamas</option>
-																		<option value="BZ" data-zip="">Belize</option>
-																		<option value="BM" data-zip="">Bermuda</option>
-																		<option value="BW" data-zip="">Botswana</option>
-																		<option value="BV" data-zip="">Bouvet Island</option>
-																		<option value="BN" data-zip="">Brunei Darussalam</option>
-																		<option value="BF" data-zip="">Burkina Faso</option>
-																		<option value="BI" data-zip="">Burundi</option>
-																		<option value="KY" data-zip="">Cayman Islands</option>
-																		<option value="CX" data-zip="">Christmas Island</option>
-																		<option value="CC" data-zip="">Cocos (Keeling) Islands</option>
-																		<option value="KM" data-zip="">Comoros</option>
-																		<option value="CK" data-zip="">Cook Islands</option>
-																		<option value="DJ" data-zip="">Djibouti</option>
-																		<option value="ER" data-zip="">Eritrea</option>
-																		<option value="FK" data-zip="">Falkland Islands (Malvinas)</option>
-																		<option value="FJ" data-zip="">Fiji</option>
-																		<option value="GF" data-zip="">French Guiana</option>
-																		<option value="GA" data-zip="">Gabon</option>
-																		<option value="GU" data-zip="">Guam</option>
-																		<option value="GG" data-zip="">Guernsey</option>
-																		<option value="GW" data-zip="">Guinea-Bissau</option>
-																		<option value="HT" data-zip="">Haiti</option>
-																		<option value="HM" data-zip="">Heard Island and McDonald Islands</option>
-																		<option value="IM" data-zip="">Isle of Man</option>
-																		<option value="KI" data-zip="">Kiribati</option>
-																		<option value="LS" data-zip="">Lesotho</option>
-																		<option value="LR" data-zip="">Liberia</option>
-																		<option value="MH" data-zip="">Marshall Islands</option>
-																		<option value="YT" data-zip="">Mayotte</option>
-																		<option value="NR" data-zip="">Nauru</option>
-																		<option value="NU" data-zip="">Niue</option>
-																		<option value="MP" data-zip="">Northern Mariana Islands</option>
-																		<option value="PW" data-zip="">Palau</option>
-																		<option value="PS" data-zip="">Palestinian Territory, Occupied</option>
-																		<option value="PN" data-zip="">Pitcairn</option>
-																		<option value="BL" data-zip="">Saint Barthélemy</option>
-																		<option value="SH" data-zip="">Saint Helena</option>
-																		<option value="KN" data-zip="">Saint Kitts and Nevis</option>
-																		<option value="LC" data-zip="">Saint Lucia</option>
-																		<option value="PM" data-zip="">Saint Pierre and Miquelon</option>
-																		<option value="VC" data-zip="">Saint Vincent and the Grenadines</option>
-																		<option value="WS" data-zip="">Samoa</option>
-																		<option value="ST" data-zip="">Sao Tome and Principe</option>
-																		<option value="SB" data-zip="">Solomon Islands</option>
-																		<option value="GS" data-zip="">South Georgia and the South Sandwich Islands</option>
-																		<option value="TL" data-zip="">Timor-Leste</option>
-																		<option value="TK" data-zip="">Tokelau</option>
-																		<option value="TO" data-zip="">Tonga</option>
-																		<option value="TT" data-zip="">Trinidad and Tobago</option>
-																		<option value="TV" data-zip="">Tuvalu</option>
-																		<option value="VU" data-zip="">Vanuatu</option>
-																		<option value="VG" data-zip="">Virgin Islands, British</option>
-																	</select>
-																</div>
-															</div>
-															<div class="col-lg-6 mt-3 mt-lg-0">
-																<div class="form-group form-group-country mb-0">
-																	<label for="import-to-country-select">To</label>
-																	<select id="import-to-country-select" class="select2 country-select">
-																		<option>Select a country</option>
-																		<option value="ES" data-zip="08001" selected>Spain</option>
-																		<option value="IT" data-zip="10010">Italy</option>
-																		<option value="DE" data-zip="10117">Germany</option>
-																		<option value="FR" data-zip="75001">France</option>
-																		<option value="PT" data-zip="1000">Portugal</option>
-																		<option value="PL" data-zip="00001">Poland</option>
-																		<option value="IE" data-zip="">Ireland</option>
-																		<option value="NL" data-zip="1012">Netherlands</option>
-																		<option value="HU" data-zip="1051">Hungary</option>
-																		<option value="SE" data-zip="10316">Sweden</option>
-																		<option value="BE" data-zip="1000">Belgium</option>
-																		<option value="DK" data-zip="1050">Denmark</option>
-																		<option value="GR" data-zip="10431">Greece</option>
-																		<option value="LT" data-zip="06001">Lithuania</option>
-																		<option value="CZ" data-zip="10000">Czech Republic</option>
-																		<option value="RO" data-zip="010001">Romania</option>
-																		<option value="AT" data-zip="1010">Austria</option>
-																		<option value="HR" data-zip="10000">Croatia</option>
-																		<option value="FI" data-zip="00100">Finland</option>
-																		<option value="BG" data-zip="1000">Bulgaria</option>
-																		<option value="SK" data-zip="81103">Slovakia</option>
-																		<option value="GB" data-zip="">United Kingdom</option>
-																		<option value="EE" data-zip="10111">Estonia</option>
-																		<option value="LV" data-zip="1000">Latvia</option>
-																		<option value="SI" data-zip="1000">Slovenia</option>
-																		<option value="LU" data-zip="1232">Luxembourg</option>
-																		<option value="CH" data-zip="">Switzerland</option>
-																		<option value="US" data-zip="">United States</option>
-																		<option value="BR" data-zip="">Brazil</option>
-																		<option value="NO" data-zip="">Norway</option>
-																		<option value="AU" data-zip="">Australia</option>
-																		<option value="TR" data-zip="">Turkey</option>
-																		<option value="CA" data-zip="">Canada</option>
-																		<option value="CN" data-zip="">China</option>
-																		<option value="IN" data-zip="">India</option>
-																		<option value="MT" data-zip="">Malta</option>
-																		<option value="MA" data-zip="">Morocco</option>
-																		<option value="RS" data-zip="">Serbia</option>
-																		<option value="CY" data-zip="">Cyprus</option>
-																		<option value="MX" data-zip="">Mexico</option>
-																		<option value="CO" data-zip="">Colombia</option>
-																		<option value="AE" data-zip="">United Arab Emirates</option>
-																		<option value="GE" data-zip="">Georgia</option>
-																		<option value="IL" data-zip="">Israel</option>
-																		<option value="UA" data-zip="">Ukraine</option>
-																		<option value="CL" data-zip="">Chile</option>
-																		<option value="PK" data-zip="">Pakistan</option>
-																		<option value="PE" data-zip="">Peru</option>
-																		<option value="KR" data-zip="">Korea, Republic of</option>
-																		<option value="RU" data-zip="">Russian Federation</option>
-																		<option value="ZA" data-zip="">South Africa</option>
-																		<option value="IS" data-zip="">Iceland</option>
-																		<option value="AL" data-zip="">Albania</option>
-																		<option value="TH" data-zip="">Thailand</option>
-																		<option value="TN" data-zip="">Tunisia</option>
-																		<option value="AR" data-zip="">Argentina</option>
-																		<option value="JP" data-zip="">Japan</option>
-																		<option value="BA" data-zip="">Bosnia and Herzegovina</option>
-																		<option value="PH" data-zip="">Philippines</option>
-																		<option value="MY" data-zip="">Malaysia</option>
-																		<option value="NZ" data-zip="">New Zealand</option>
-																		<option value="CU" data-zip="">Cuba</option>
-																		<option value="NP" data-zip="">Nepal</option>
-																		<option value="ME" data-zip="">Montenegro</option>
-																		<option value="SA" data-zip="">Saudi Arabia</option>
-																		<option value="MD" data-zip="">Moldova, Republic of</option>
-																		<option value="DZ" data-zip="">Algeria</option>
-																		<option value="EC" data-zip="">Ecuador</option>
-																		<option value="AM" data-zip="">Armenia</option>
-																		<option value="BY" data-zip="">Belarus</option>
-																		<option value="ID" data-zip="">Indonesia</option>
-																		<option value="BD" data-zip="">Bangladesh</option>
-																		<option value="QA" data-zip="">Qatar</option>
-																		<option value="SG" data-zip="">Singapore</option>
-																		<option value="VE" data-zip="">Venezuela, Bolivarian Republic of</option>
-																		<option value="AZ" data-zip="">Azerbaijan</option>
-																		<option value="MQ" data-zip="">Martinique</option>
-																		<option value="KZ" data-zip="">Kazakhstan</option>
-																		<option value="HK" data-zip="">Hong Kong</option>
-																		<option value="IR" data-zip="">Iran, Islamic Republic of</option>
-																		<option value="DO" data-zip="">Dominican Republic</option>
-																		<option value="MK" data-zip="">Macedonia, the former Yugoslav Republic of</option>
-																		<option value="CD" data-zip="">Congo, the Democratic Republic of the</option>
-																		<option value="PA" data-zip="">Panama</option>
-																		<option value="EG" data-zip="">Egypt</option>
-																		<option value="BO" data-zip="">Bolivia, Plurinational State of</option>
-																		<option value="TW" data-zip="">Taiwan, Province of China</option>
-																		<option value="GI" data-zip="">Gibraltar</option>
-																		<option value="MC" data-zip="">Monaco</option>
-																		<option value="NG" data-zip="">Nigeria</option>
-																		<option value="MF" data-zip="">Saint Martin</option>
-																		<option value="VN" data-zip="">Viet Nam</option>
-																		<option value="LK" data-zip="">Sri Lanka</option>
-																		<option value="AD" data-zip="">Andorra</option>
-																		<option value="BH" data-zip="">Bahrain</option>
-																		<option value="KE" data-zip="">Kenya</option>
-																		<option value="AN" data-zip="">Netherlands Antilles</option>
-																		<option value="UZ" data-zip="">Uzbekistan</option>
-																		<option value="AO" data-zip="">Angola</option>
-																		<option value="CV" data-zip="">Cape Verde</option>
-																		<option value="RE" data-zip="">Réunion</option>
-																		<option value="CR" data-zip="">Costa Rica</option>
-																		<option value="GH" data-zip="">Ghana</option>
-																		<option value="CM" data-zip="">Cameroon</option>
-																		<option value="GT" data-zip="">Guatemala</option>
-																		<option value="JO" data-zip="">Jordan</option>
-																		<option value="KW" data-zip="">Kuwait</option>
-																		<option value="PY" data-zip="">Paraguay</option>
-																		<option value="ZW" data-zip="">Zimbabwe</option>
-																		<option value="CI" data-zip="">Côte d&#39;Ivoire</option>
-																		<option value="IQ" data-zip="">Iraq</option>
-																		<option value="UY" data-zip="">Uruguay</option>
-																		<option value="PF" data-zip="">French Polynesia</option>
-																		<option value="GP" data-zip="">Guadeloupe</option>
-																		<option value="AF" data-zip="">Afghanistan</option>
-																		<option value="CG" data-zip="">Congo</option>
-																		<option value="JE" data-zip="">Jersey</option>
-																		<option value="SN" data-zip="">Senegal</option>
-																		<option value="SV" data-zip="">El Salvador</option>
-																		<option value="NE" data-zip="">Niger</option>
-																		<option value="PR" data-zip="">Puerto Rico</option>
-																		<option value="MG" data-zip="">Madagascar</option>
-																		<option value="MW" data-zip="">Malawi</option>
-																		<option value="SJ" data-zip="">Svalbard and Jan Mayen</option>
-																		<option value="SZ" data-zip="">Swaziland</option>
-																		<option value="SY" data-zip="">Syrian Arab Republic</option>
-																		<option value="KH" data-zip="">Cambodia</option>
-																		<option value="HN" data-zip="">Honduras</option>
-																		<option value="JM" data-zip="">Jamaica</option>
-																		<option value="KG" data-zip="">Kyrgyzstan</option>
-																		<option value="LB" data-zip="">Lebanon</option>
-																		<option value="LI" data-zip="">Liechtenstein</option>
-																		<option value="MR" data-zip="">Mauritania</option>
-																		<option value="MM" data-zip="">Myanmar</option>
-																		<option value="OM" data-zip="">Oman</option>
-																		<option value="BT" data-zip="">Bhutan</option>
-																		<option value="TD" data-zip="">Chad</option>
-																		<option value="LA" data-zip="">Lao People&#39;s Democratic Republic</option>
-																		<option value="LY" data-zip="">Libyan Arab Jamahiriya</option>
-																		<option value="ML" data-zip="">Mali</option>
-																		<option value="SR" data-zip="">Suriname</option>
-																		<option value="TG" data-zip="">Togo</option>
-																		<option value="UG" data-zip="">Uganda</option>
-																		<option value="VI" data-zip="">Virgin Islands, U.S.</option>
-																		<option value="ZM" data-zip="">Zambia</option>
-																		<option value="AG" data-zip="">Antigua and Barbuda</option>
-																		<option value="GQ" data-zip="">Equatorial Guinea</option>
-																		<option value="ET" data-zip="">Ethiopia</option>
-																		<option value="GM" data-zip="">Gambia</option>
-																		<option value="GD" data-zip="">Grenada</option>
-																		<option value="GN" data-zip="">Guinea</option>
-																		<option value="MU" data-zip="">Mauritius</option>
-																		<option value="MN" data-zip="">Mongolia</option>
-																		<option value="MZ" data-zip="">Mozambique</option>
-																		<option value="NA" data-zip="">Namibia</option>
-																		<option value="SM" data-zip="">San Marino</option>
-																		<option value="SL" data-zip="">Sierra Leone</option>
-																		<option value="TC" data-zip="">Turks and Caicos Islands</option>
-																		<option value="EH" data-zip="">Western Sahara</option>
-																		<option value="AX" data-zip="">Åland Islands</option>
-																		<option value="AW" data-zip="">Aruba</option>
-																		<option value="BB" data-zip="">Barbados</option>
-																		<option value="BJ" data-zip="">Benin</option>
-																		<option value="IO" data-zip="">British Indian Ocean Territory</option>
-																		<option value="CF" data-zip="">Central African Republic</option>
-																		<option value="DM" data-zip="">Dominica</option>
-																		<option value="FO" data-zip="">Faroe Islands</option>
-																		<option value="TF" data-zip="">French Southern Territories</option>
-																		<option value="GL" data-zip="">Greenland</option>
-																		<option value="GY" data-zip="">Guyana</option>
-																		<option value="VA" data-zip="">Holy See (Vatican City State)</option>
-																		<option value="MO" data-zip="">Macao</option>
-																		<option value="MV" data-zip="">Maldives</option>
-																		<option value="FM" data-zip="">Micronesia, Federated States of</option>
-																		<option value="MS" data-zip="">Montserrat</option>
-																		<option value="NC" data-zip="">New Caledonia</option>
-																		<option value="NI" data-zip="">Nicaragua</option>
-																		<option value="NF" data-zip="">Norfolk Island</option>
-																		<option value="PG" data-zip="">Papua New Guinea</option>
-																		<option value="RW" data-zip="">Rwanda</option>
-																		<option value="SC" data-zip="">Seychelles</option>
-																		<option value="SO" data-zip="">Somalia</option>
-																		<option value="SD" data-zip="">Sudan</option>
-																		<option value="TJ" data-zip="">Tajikistan</option>
-																		<option value="TZ" data-zip="">Tanzania, United Republic of</option>
-																		<option value="TM" data-zip="">Turkmenistan</option>
-																		<option value="UM" data-zip="">United States Minor Outlying Islands</option>
-																		<option value="WF" data-zip="">Wallis and Futuna</option>
-																		<option value="YE" data-zip="">Yemen</option>
-																		<option value="AS" data-zip="">American Samoa</option>
-																		<option value="AI" data-zip="">Anguilla</option>
-																		<option value="AQ" data-zip="">Antarctica</option>
-																		<option value="BS" data-zip="">Bahamas</option>
-																		<option value="BZ" data-zip="">Belize</option>
-																		<option value="BM" data-zip="">Bermuda</option>
-																		<option value="BW" data-zip="">Botswana</option>
-																		<option value="BV" data-zip="">Bouvet Island</option>
-																		<option value="BN" data-zip="">Brunei Darussalam</option>
-																		<option value="BF" data-zip="">Burkina Faso</option>
-																		<option value="BI" data-zip="">Burundi</option>
-																		<option value="KY" data-zip="">Cayman Islands</option>
-																		<option value="CX" data-zip="">Christmas Island</option>
-																		<option value="CC" data-zip="">Cocos (Keeling) Islands</option>
-																		<option value="KM" data-zip="">Comoros</option>
-																		<option value="CK" data-zip="">Cook Islands</option>
-																		<option value="DJ" data-zip="">Djibouti</option>
-																		<option value="ER" data-zip="">Eritrea</option>
-																		<option value="FK" data-zip="">Falkland Islands (Malvinas)</option>
-																		<option value="FJ" data-zip="">Fiji</option>
-																		<option value="GF" data-zip="">French Guiana</option>
-																		<option value="GA" data-zip="">Gabon</option>
-																		<option value="GU" data-zip="">Guam</option>
-																		<option value="GG" data-zip="">Guernsey</option>
-																		<option value="GW" data-zip="">Guinea-Bissau</option>
-																		<option value="HT" data-zip="">Haiti</option>
-																		<option value="HM" data-zip="">Heard Island and McDonald Islands</option>
-																		<option value="IM" data-zip="">Isle of Man</option>
-																		<option value="KI" data-zip="">Kiribati</option>
-																		<option value="LS" data-zip="">Lesotho</option>
-																		<option value="LR" data-zip="">Liberia</option>
-																		<option value="MH" data-zip="">Marshall Islands</option>
-																		<option value="YT" data-zip="">Mayotte</option>
-																		<option value="NR" data-zip="">Nauru</option>
-																		<option value="NU" data-zip="">Niue</option>
-																		<option value="MP" data-zip="">Northern Mariana Islands</option>
-																		<option value="PW" data-zip="">Palau</option>
-																		<option value="PS" data-zip="">Palestinian Territory, Occupied</option>
-																		<option value="PN" data-zip="">Pitcairn</option>
-																		<option value="BL" data-zip="">Saint Barthélemy</option>
-																		<option value="SH" data-zip="">Saint Helena</option>
-																		<option value="KN" data-zip="">Saint Kitts and Nevis</option>
-																		<option value="LC" data-zip="">Saint Lucia</option>
-																		<option value="PM" data-zip="">Saint Pierre and Miquelon</option>
-																		<option value="VC" data-zip="">Saint Vincent and the Grenadines</option>
-																		<option value="WS" data-zip="">Samoa</option>
-																		<option value="ST" data-zip="">Sao Tome and Principe</option>
-																		<option value="SB" data-zip="">Solomon Islands</option>
-																		<option value="GS" data-zip="">South Georgia and the South Sandwich Islands</option>
-																		<option value="TL" data-zip="">Timor-Leste</option>
-																		<option value="TK" data-zip="">Tokelau</option>
-																		<option value="TO" data-zip="">Tonga</option>
-																		<option value="TT" data-zip="">Trinidad and Tobago</option>
-																		<option value="TV" data-zip="">Tuvalu</option>
-																		<option value="VU" data-zip="">Vanuatu</option>
-																		<option value="VG" data-zip="">Virgin Islands, British</option>
-																	</select>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-sm-12 col-md-12 col-lg-12 col-xl-7 mt-4 mt-lg-0">
-												<div class="parcel-info" id="parcel_info">
-													<h5 class="section-head">Enter the weight and dimensions of your parcels</h5>
-													<div class="card weight-card">
-														<div class="card-body">
-															<form method="post">
-																<div class="row">
-																	<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-																		<div class="form-group">
-																			<label for="weight">Weight(kg) *</label>
-																			<select id="weight" class="form-control" required>
-																				<option value="0.5" selected>0.5</option>
-																				<option value="1">1</option>
-																				<option value="1.5">1.5</option>
-																				<option value="2">2</option>
-																				<option value="2.5">2.5</option>
-																				<option value="3">3</option>
-																				<option value="3.5">3.5</option>
-																				<option value="4">4</option>
-																				<option value="4.5">4.5</option>
-																				<option value="5">5</option>
-																				<option value="5.5">5.5</option>
-																				<option value="6">6</option>
-																				<option value="6.5">6.5</option>
-																				<option value="7">7</option>
-																				<option value="7.5">7.5</option>
-																				<option value="8">8</option>
-																			</select>
-																		</div>
-																	</div>
-																	<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-																		<div class="form-group">
-																			<label for="length">Length (cm)</label>
-																			<input type="text" class="form-control" id="length">
-																		</div>
-																	</div>
-																	<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-																		<div class="form-group">
-																			<label for="width">Width (cm)</label>
-																			<input type="text" class="form-control" id="width">
-																		</div>
-																	</div>
-																	<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-																		<div class="form-group">
-																			<label for="height">Height (cm)</label>
-																			<input type="text" class="form-control" id="height">
-																		</div>
-																	</div>
-																</div>
-															</form>
-														</div>
-													</div>
-												</div>	
-												<div class="row justify-content-center">
-													<div class="col-12 text-center text-lg-left">
-														<!-- <button id="copy" onlick="duplicate()" class="d-block ml-auto btn btn-primary" type="button">Copy</button> -->
-														<button type="button" class="btn btn-primary add_field_button parcel_add_button">Add Another Package</button>
-													</div>
-												</div>											
-											</div>
-										</div>
-										<div class="price-switcher-wrap d-none">
-											<div class="swiper-container" id="price-switcher-swiper">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide business-price-slide">
-														<div class="business-price-switcher price-switcher d-flex align-items-center">
-															<div class="business-price-switcher-title text-uppercase">Business
-																<br>Price</div>
-															<input id="business-price-checkbox" class="price-switcher-checkbox" name="bp" value="1" type="checkbox">
-															<label class="price-switcher-label" for="business-price-checkbox"> <span class="switcher-label-mark">
-																<svg width="18" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M16.943.882a1.172 1.172 0 0 0-1.665 0L6.54 9.632 2.87 5.948a1.199 1.199 0 1 0-1.666 1.724l4.503 4.504a1.173 1.173 0 0 0 1.666 0l9.57-9.57a1.172 1.172 0 0 0 0-1.725Z" /></svg>
-																</span>
-															</label>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="price-switcher">
-															<input id="parcel-radio" name="price_type" value="parcel" type="radio" class="price-switcher-checkbox" checked="checked">
-															<label class="price-switcher-label" for="parcel-radio">
-																<span class="switcher-label-icon">
-																	<svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
-																		<path fill-rule="evenodd" clip-rule="evenodd" d="M24.369 8.82118L21.9982 1.70881ZM24.3695 8.8227C24.4586 9.0801 24.5 9.34651 24.5 9.61563V22C24.5 23.3803 23.3803 24.5 22 24.5H2.5C1.11974 24.5 0 23.3803 0 22V9.61563C0 9.34284 0.0472298 9.07759 0.129536 8.82553L0.130012 8.82407L2.50177 1.70881C2.84054 0.68771 3.79417 0 4.87187 0H19.6281C20.7058 0 21.6594 0.687749 21.9982 1.70881M24.3695 8.8227L24.369 8.82118ZM2.05154 9.375L4.39618 2.34109C4.46517 2.13792 4.65607 2 4.87187 2H11.25V9.375H2.05154ZM22 22.5C22.2744 22.5 22.5 22.2744 22.5 22V11.375H2V22C2 22.2744 2.22557 22.5 2.5 22.5H22ZM22.4485 9.375H13.25V2H19.6281C19.8438 2 20.0345 2.13734 20.1036 2.34039L22.4485 9.375Z" />
-																	</svg>
-																</span>
-																<span class="switcher-label-text">Parcel</span> <span class="switcher-label-mark">
-																	<svg width="18" height="13" xmlns="http://www.w3.org/2000/svg">
-																		<path d="M16.943.882a1.172 1.172 0 0 0-1.665 0L6.54 9.632 2.87 5.948a1.199 1.199 0 1 0-1.666 1.724l4.503 4.504a1.173 1.173 0 0 0 1.666 0l9.57-9.57a1.172 1.172 0 0 0 0-1.725Z" />
-																	</svg>
-																</span>
-															</label>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="price-switcher">
-															<input id="pallet-radio" name="price_type" value="pallet" type="radio" class="price-switcher-checkbox" data-index="2">
-															<label class="price-switcher-label" for="pallet-radio">
-																<span class="switcher-label-icon">
-																	<svg width="29" height="24" viewBox="0 0 29 24" xmlns="http://www.w3.org/2000/svg">
-																		<path fill-rule="evenodd" clip-rule="evenodd" d="M7.78387 2.05H21.0484V11.25H7.78387V2.05ZM2.90323 17.05V21.75H0.625806C0.284907 21.75 0 22.0396 0 22.4V23.15C0 23.5104 0.284907 23.8 0.625806 23.8H28.2064C28.5473 23.8 28.8323 23.5104 28.8323 23.15V22.4C28.8323 22.0396 28.5473 21.75 28.2064 21.75H25.929V17.05H28.2064C28.5473 17.05 28.8323 16.7604 28.8323 16.4V15.65C28.8323 15.2896 28.5473 15 28.2064 15H0.625806C0.284907 15 0 15.2896 0 15.65V16.4C0 16.7604 0.284907 17.05 0.625806 17.05H2.90323ZM7.98387 21.75H4.88065V17.05H7.98387V21.75ZM18.871 21.75H9.96129V17.05H18.871V21.75ZM23.9516 21.75H20.8484V17.05H23.9516V21.75ZM6.43226 13.3H22.4C22.7409 13.3 23.0258 13.0104 23.0258 12.65V0.65C23.0258 0.289612 22.7409 0 22.4 0H6.43226C6.09136 0 5.80645 0.289612 5.80645 0.65V12.65C5.80645 13.0104 6.09136 13.3 6.43226 13.3Z" />
-																	</svg>
-																</span>
-																<span class="switcher-label-text">Pallet</span> <span class="switcher-label-mark">
-																	<svg width="18" height="13" xmlns="http://www.w3.org/2000/svg">
-																		<path d="M16.943.882a1.172 1.172 0 0 0-1.665 0L6.54 9.632 2.87 5.948a1.199 1.199 0 1 0-1.666 1.724l4.503 4.504a1.173 1.173 0 0 0 1.666 0l9.57-9.57a1.172 1.172 0 0 0 0-1.725Z" />
-																	</svg>
-																	</span>
-																</label>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="price-switcher">
-															<input id="truck-radio" name="price_type" value="truck" type="radio" class="price-switcher-checkbox" data-index="3">
-															<label class="price-switcher-label" for="truck-radio">
-																<span class="switcher-label-icon">
-																	<svg width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-																		<path fill-rule="evenodd" clip-rule="evenodd" d="M3.27281 15.2308H2.56838C2.37488 15.2308 2.23007 15.1692 2.13487 15.0774C2.04032 14.9862 1.97892 14.85 1.97892 14.6692V4.00769C1.97892 2.90641 2.98777 1.92308 4.1473 1.92308H16.7787C17.9382 1.92308 18.9471 2.90641 18.9471 4.00769V15.2308H11.3353C10.8978 13.4596 9.27527 12.1846 7.30407 12.1846C5.33287 12.1846 3.71032 13.4596 3.27281 15.2308ZM3.27283 17.1538H2.56838C1.20164 17.1538 0 16.0049 0 14.6692V4.00769C0 1.7582 1.8332 0 4.1473 0H16.7787C18.6927 0 20.2779 1.20198 20.7689 2.89355H22.9375C25.381 2.89355 27.5109 4.30797 28.3333 6.36903L28.3337 6.37027L30.2242 10.9293C30.3075 11.0912 30.3542 11.2231 30.3779 11.3603C30.4006 11.4916 30.4006 11.6209 30.4006 11.7651V14.669C30.4006 15.6971 29.6889 16.6102 28.7473 16.9789C28.3765 18.8401 26.7127 20.2 24.6771 20.2C22.624 20.2 20.9495 18.816 20.5978 16.9329C20.422 17.0785 20.1918 17.1538 19.9365 17.1538H11.3353C10.8978 18.925 9.27524 20.2 7.30407 20.2C5.3329 20.2 3.71037 18.925 3.27283 17.1538ZM20.926 14.4569C21.5865 13.1009 23.0065 12.1846 24.6771 12.1846C26.2198 12.1846 27.5489 12.9653 28.2638 14.1544V11.6626L26.3843 7.13018C25.7841 5.68276 24.4366 4.81664 22.9375 4.81664H20.926V14.4569ZM26.8455 16.1923C26.8455 15.091 25.8366 14.1076 24.6771 14.1076C23.5176 14.1076 22.5087 15.091 22.5087 16.1923C22.5087 17.2935 23.5176 18.2769 24.6771 18.2769C25.8366 18.2769 26.8455 17.2935 26.8455 16.1923ZM9.47246 16.1923C9.47246 15.091 8.4636 14.1076 7.30407 14.1076C6.14454 14.1076 5.13568 15.091 5.13568 16.1923C5.13568 17.2935 6.14454 18.2769 7.30407 18.2769C8.4636 18.2769 9.47246 17.2935 9.47246 16.1923Z" />
-																	</svg>
-																</span>
-																<span class="switcher-label-text">Freight</span>
-																<span class="switcher-label-mark">
-																	<svg width="18" height="13" xmlns="http://www.w3.org/2000/svg">
-																		<path d="M16.943.882a1.172 1.172 0 0 0-1.665 0L6.54 9.632 2.87 5.948a1.199 1.199 0 1 0-1.666 1.724l4.503 4.504a1.173 1.173 0 0 0 1.666 0l9.57-9.57a1.172 1.172 0 0 0 0-1.725Z" />
-																	</svg>
-																</span>
-															</label>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="add-parcel-wrap">
-											<div class="add-parcel-title">Parcels</div>
-											<div class="parcel-table"> </div>
-										</div>
-										<div class="home-form-preloader"></div>
-									</form>
+            <h1 class="landing-header">Send parcels in <strong>Europe!</strong></h1>
+			<form class="shipping-form home-form" method="get">
+				<div class="shipping-form-wrap">
+					<div class="form-group form-group-country group-country-from">
+						<input type="text" class="form-control preload-country-select" disabled="disabled">
+						<select id="from-country-select" class="select2 country-select" data-prefix="From" style="display:none;">
+							<option>Select a country</option>
+							<option value="ES" data-zip="08001">Spain</option>
+							<option value="IT" data-zip="10010">Italy</option>
+							<option value="DE" data-zip="10117">Germany</option>
+							<option value="FR" data-zip="75001">France</option>
+							<option value="PT" data-zip="1000">Portugal</option>
+							<option value="PL" data-zip="00001">Poland</option>
+							<option value="IE" data-zip="">Ireland</option>
+							<option value="NL" data-zip="1012">Netherlands</option>
+							<option value="HU" data-zip="1051">Hungary</option>
+							<option value="SE" data-zip="10316">Sweden</option>
+							<option value="BE" data-zip="1000">Belgium</option>
+							<option value="DK" data-zip="1050">Denmark</option>
+							<option value="GR" data-zip="10431">Greece</option>
+							<option value="LT" data-zip="06001">Lithuania</option>
+							<option value="CZ" data-zip="10000">Czech Republic</option>
+							<option value="RO" data-zip="010001">Romania</option>
+							<option value="AT" data-zip="1010">Austria</option>
+							<option value="HR" data-zip="10000">Croatia</option>
+							<option value="FI" data-zip="00100">Finland</option>
+							<option value="BG" data-zip="1000">Bulgaria</option>
+							<option value="SK" data-zip="81103">Slovakia</option>
+							<option value="GB" data-zip="">United Kingdom</option>
+							<option value="EE" data-zip="10111">Estonia</option>
+							<option value="LV" data-zip="1000">Latvia</option>
+							<option value="SI" data-zip="1000">Slovenia</option>
+							<option value="LU" data-zip="1232">Luxembourg</option>
+							<option value="CH" data-zip="">Switzerland</option>
+							<option value="US" data-zip="">United States</option>
+							<option value="BR" data-zip="">Brazil</option>
+							<option value="NO" data-zip="">Norway</option>
+							<option value="AU" data-zip="">Australia</option>
+							<option value="TR" data-zip="">Turkey</option>
+							<option value="CA" data-zip="">Canada</option>
+							<option value="CN" data-zip="">China</option>
+							<option value="IN" data-zip="">India</option>
+							<option value="MT" data-zip="">Malta</option>
+							<option value="MA" data-zip="">Morocco</option>
+							<option value="RS" data-zip="">Serbia</option>
+							<option value="CY" data-zip="">Cyprus</option>
+							<option value="MX" data-zip="">Mexico</option>
+							<option value="CO" data-zip="">Colombia</option>
+							<option value="AE" data-zip="">United Arab Emirates</option>
+							<option value="GE" data-zip="">Georgia</option>
+							<option value="IL" data-zip="">Israel</option>
+							<option value="UA" data-zip="">Ukraine</option>
+							<option value="CL" data-zip="">Chile</option>
+							<option value="PK" data-zip="" selected>Pakistan</option>
+							<option value="PE" data-zip="">Peru</option>
+							<option value="KR" data-zip="">Korea, Republic of</option>
+							<option value="RU" data-zip="">Russian Federation</option>
+							<option value="ZA" data-zip="">South Africa</option>
+							<option value="IS" data-zip="">Iceland</option>
+							<option value="AL" data-zip="">Albania</option>
+							<option value="TH" data-zip="">Thailand</option>
+							<option value="TN" data-zip="">Tunisia</option>
+							<option value="AR" data-zip="">Argentina</option>
+							<option value="JP" data-zip="">Japan</option>
+							<option value="BA" data-zip="">Bosnia and Herzegovina</option>
+							<option value="PH" data-zip="">Philippines</option>
+							<option value="MY" data-zip="">Malaysia</option>
+							<option value="NZ" data-zip="">New Zealand</option>
+							<option value="CU" data-zip="">Cuba</option>
+							<option value="NP" data-zip="">Nepal</option>
+							<option value="ME" data-zip="">Montenegro</option>
+							<option value="SA" data-zip="">Saudi Arabia</option>
+							<option value="MD" data-zip="">Moldova, Republic of</option>
+							<option value="DZ" data-zip="">Algeria</option>
+							<option value="EC" data-zip="">Ecuador</option>
+							<option value="AM" data-zip="">Armenia</option>
+							<option value="BY" data-zip="">Belarus</option>
+							<option value="ID" data-zip="">Indonesia</option>
+							<option value="BD" data-zip="">Bangladesh</option>
+							<option value="QA" data-zip="">Qatar</option>
+							<option value="SG" data-zip="">Singapore</option>
+							<option value="VE" data-zip="">Venezuela, Bolivarian Republic of</option>
+							<option value="AZ" data-zip="">Azerbaijan</option>
+							<option value="MQ" data-zip="">Martinique</option>
+							<option value="KZ" data-zip="">Kazakhstan</option>
+							<option value="HK" data-zip="">Hong Kong</option>
+							<option value="IR" data-zip="">Iran, Islamic Republic of</option>
+							<option value="DO" data-zip="">Dominican Republic</option>
+							<option value="MK" data-zip="">Macedonia, the former Yugoslav Republic of</option>
+							<option value="CD" data-zip="">Congo, the Democratic Republic of the</option>
+							<option value="PA" data-zip="">Panama</option>
+							<option value="EG" data-zip="">Egypt</option>
+							<option value="BO" data-zip="">Bolivia, Plurinational State of</option>
+							<option value="TW" data-zip="">Taiwan, Province of China</option>
+							<option value="GI" data-zip="">Gibraltar</option>
+							<option value="MC" data-zip="">Monaco</option>
+							<option value="NG" data-zip="">Nigeria</option>
+							<option value="MF" data-zip="">Saint Martin</option>
+							<option value="VN" data-zip="">Viet Nam</option>
+							<option value="LK" data-zip="">Sri Lanka</option>
+							<option value="AD" data-zip="">Andorra</option>
+							<option value="BH" data-zip="">Bahrain</option>
+							<option value="KE" data-zip="">Kenya</option>
+							<option value="AN" data-zip="">Netherlands Antilles</option>
+							<option value="UZ" data-zip="">Uzbekistan</option>
+							<option value="AO" data-zip="">Angola</option>
+							<option value="CV" data-zip="">Cape Verde</option>
+							<option value="RE" data-zip="">Réunion</option>
+							<option value="CR" data-zip="">Costa Rica</option>
+							<option value="GH" data-zip="">Ghana</option>
+							<option value="CM" data-zip="">Cameroon</option>
+							<option value="GT" data-zip="">Guatemala</option>
+							<option value="JO" data-zip="">Jordan</option>
+							<option value="KW" data-zip="">Kuwait</option>
+							<option value="PY" data-zip="">Paraguay</option>
+							<option value="ZW" data-zip="">Zimbabwe</option>
+							<option value="CI" data-zip="">Côte d&#39;Ivoire</option>
+							<option value="IQ" data-zip="">Iraq</option>
+							<option value="UY" data-zip="">Uruguay</option>
+							<option value="PF" data-zip="">French Polynesia</option>
+							<option value="GP" data-zip="">Guadeloupe</option>
+							<option value="AF" data-zip="">Afghanistan</option>
+							<option value="CG" data-zip="">Congo</option>
+							<option value="JE" data-zip="">Jersey</option>
+							<option value="SN" data-zip="">Senegal</option>
+							<option value="SV" data-zip="">El Salvador</option>
+							<option value="NE" data-zip="">Niger</option>
+							<option value="PR" data-zip="">Puerto Rico</option>
+							<option value="MG" data-zip="">Madagascar</option>
+							<option value="MW" data-zip="">Malawi</option>
+							<option value="SJ" data-zip="">Svalbard and Jan Mayen</option>
+							<option value="SZ" data-zip="">Swaziland</option>
+							<option value="SY" data-zip="">Syrian Arab Republic</option>
+							<option value="KH" data-zip="">Cambodia</option>
+							<option value="HN" data-zip="">Honduras</option>
+							<option value="JM" data-zip="">Jamaica</option>
+							<option value="KG" data-zip="">Kyrgyzstan</option>
+							<option value="LB" data-zip="">Lebanon</option>
+							<option value="LI" data-zip="">Liechtenstein</option>
+							<option value="MR" data-zip="">Mauritania</option>
+							<option value="MM" data-zip="">Myanmar</option>
+							<option value="OM" data-zip="">Oman</option>
+							<option value="BT" data-zip="">Bhutan</option>
+							<option value="TD" data-zip="">Chad</option>
+							<option value="LA" data-zip="">Lao People&#39;s Democratic Republic</option>
+							<option value="LY" data-zip="">Libyan Arab Jamahiriya</option>
+							<option value="ML" data-zip="">Mali</option>
+							<option value="SR" data-zip="">Suriname</option>
+							<option value="TG" data-zip="">Togo</option>
+							<option value="UG" data-zip="">Uganda</option>
+							<option value="VI" data-zip="">Virgin Islands, U.S.</option>
+							<option value="ZM" data-zip="">Zambia</option>
+							<option value="AG" data-zip="">Antigua and Barbuda</option>
+							<option value="GQ" data-zip="">Equatorial Guinea</option>
+							<option value="ET" data-zip="">Ethiopia</option>
+							<option value="GM" data-zip="">Gambia</option>
+							<option value="GD" data-zip="">Grenada</option>
+							<option value="GN" data-zip="">Guinea</option>
+							<option value="MU" data-zip="">Mauritius</option>
+							<option value="MN" data-zip="">Mongolia</option>
+							<option value="MZ" data-zip="">Mozambique</option>
+							<option value="NA" data-zip="">Namibia</option>
+							<option value="SM" data-zip="">San Marino</option>
+							<option value="SL" data-zip="">Sierra Leone</option>
+							<option value="TC" data-zip="">Turks and Caicos Islands</option>
+							<option value="EH" data-zip="">Western Sahara</option>
+							<option value="AX" data-zip="">Åland Islands</option>
+							<option value="AW" data-zip="">Aruba</option>
+							<option value="BB" data-zip="">Barbados</option>
+							<option value="BJ" data-zip="">Benin</option>
+							<option value="IO" data-zip="">British Indian Ocean Territory</option>
+							<option value="CF" data-zip="">Central African Republic</option>
+							<option value="DM" data-zip="">Dominica</option>
+							<option value="FO" data-zip="">Faroe Islands</option>
+							<option value="TF" data-zip="">French Southern Territories</option>
+							<option value="GL" data-zip="">Greenland</option>
+							<option value="GY" data-zip="">Guyana</option>
+							<option value="VA" data-zip="">Holy See (Vatican City State)</option>
+							<option value="MO" data-zip="">Macao</option>
+							<option value="MV" data-zip="">Maldives</option>
+							<option value="FM" data-zip="">Micronesia, Federated States of</option>
+							<option value="MS" data-zip="">Montserrat</option>
+							<option value="NC" data-zip="">New Caledonia</option>
+							<option value="NI" data-zip="">Nicaragua</option>
+							<option value="NF" data-zip="">Norfolk Island</option>
+							<option value="PG" data-zip="">Papua New Guinea</option>
+							<option value="RW" data-zip="">Rwanda</option>
+							<option value="SC" data-zip="">Seychelles</option>
+							<option value="SO" data-zip="">Somalia</option>
+							<option value="SD" data-zip="">Sudan</option>
+							<option value="TJ" data-zip="">Tajikistan</option>
+							<option value="TZ" data-zip="">Tanzania, United Republic of</option>
+							<option value="TM" data-zip="">Turkmenistan</option>
+							<option value="UM" data-zip="">United States Minor Outlying Islands</option>
+							<option value="WF" data-zip="">Wallis and Futuna</option>
+							<option value="YE" data-zip="">Yemen</option>
+							<option value="AS" data-zip="">American Samoa</option>
+							<option value="AI" data-zip="">Anguilla</option>
+							<option value="AQ" data-zip="">Antarctica</option>
+							<option value="BS" data-zip="">Bahamas</option>
+							<option value="BZ" data-zip="">Belize</option>
+							<option value="BM" data-zip="">Bermuda</option>
+							<option value="BW" data-zip="">Botswana</option>
+							<option value="BV" data-zip="">Bouvet Island</option>
+							<option value="BN" data-zip="">Brunei Darussalam</option>
+							<option value="BF" data-zip="">Burkina Faso</option>
+							<option value="BI" data-zip="">Burundi</option>
+							<option value="KY" data-zip="">Cayman Islands</option>
+							<option value="CX" data-zip="">Christmas Island</option>
+							<option value="CC" data-zip="">Cocos (Keeling) Islands</option>
+							<option value="KM" data-zip="">Comoros</option>
+							<option value="CK" data-zip="">Cook Islands</option>
+							<option value="DJ" data-zip="">Djibouti</option>
+							<option value="ER" data-zip="">Eritrea</option>
+							<option value="FK" data-zip="">Falkland Islands (Malvinas)</option>
+							<option value="FJ" data-zip="">Fiji</option>
+							<option value="GF" data-zip="">French Guiana</option>
+							<option value="GA" data-zip="">Gabon</option>
+							<option value="GU" data-zip="">Guam</option>
+							<option value="GG" data-zip="">Guernsey</option>
+							<option value="GW" data-zip="">Guinea-Bissau</option>
+							<option value="HT" data-zip="">Haiti</option>
+							<option value="HM" data-zip="">Heard Island and McDonald Islands</option>
+							<option value="IM" data-zip="">Isle of Man</option>
+							<option value="KI" data-zip="">Kiribati</option>
+							<option value="LS" data-zip="">Lesotho</option>
+							<option value="LR" data-zip="">Liberia</option>
+							<option value="MH" data-zip="">Marshall Islands</option>
+							<option value="YT" data-zip="">Mayotte</option>
+							<option value="NR" data-zip="">Nauru</option>
+							<option value="NU" data-zip="">Niue</option>
+							<option value="MP" data-zip="">Northern Mariana Islands</option>
+							<option value="PW" data-zip="">Palau</option>
+							<option value="PS" data-zip="">Palestinian Territory, Occupied</option>
+							<option value="PN" data-zip="">Pitcairn</option>
+							<option value="BL" data-zip="">Saint Barthélemy</option>
+							<option value="SH" data-zip="">Saint Helena</option>
+							<option value="KN" data-zip="">Saint Kitts and Nevis</option>
+							<option value="LC" data-zip="">Saint Lucia</option>
+							<option value="PM" data-zip="">Saint Pierre and Miquelon</option>
+							<option value="VC" data-zip="">Saint Vincent and the Grenadines</option>
+							<option value="WS" data-zip="">Samoa</option>
+							<option value="ST" data-zip="">Sao Tome and Principe</option>
+							<option value="SB" data-zip="">Solomon Islands</option>
+							<option value="GS" data-zip="">South Georgia and the South Sandwich Islands</option>
+							<option value="TL" data-zip="">Timor-Leste</option>
+							<option value="TK" data-zip="">Tokelau</option>
+							<option value="TO" data-zip="">Tonga</option>
+							<option value="TT" data-zip="">Trinidad and Tobago</option>
+							<option value="TV" data-zip="">Tuvalu</option>
+							<option value="VU" data-zip="">Vanuatu</option>
+							<option value="VG" data-zip="">Virgin Islands, British</option>
+						</select>
+					</div>
+					<div class="form-group form-group-country">
+						<input type="text" class="form-control preload-country-select" disabled="disabled">
+						<select id="to-country-select" class="select2 country-select" data-prefix="To" style="display:none;">
+							<option>Select a country</option>
+							<option value="ES" data-zip="08001" selected>Spain</option>
+							<option value="IT" data-zip="10010">Italy</option>
+							<option value="DE" data-zip="10117">Germany</option>
+							<option value="FR" data-zip="75001">France</option>
+							<option value="PT" data-zip="1000">Portugal</option>
+							<option value="PL" data-zip="00001">Poland</option>
+							<option value="IE" data-zip="">Ireland</option>
+							<option value="NL" data-zip="1012">Netherlands</option>
+							<option value="HU" data-zip="1051">Hungary</option>
+							<option value="SE" data-zip="10316">Sweden</option>
+							<option value="BE" data-zip="1000">Belgium</option>
+							<option value="DK" data-zip="1050">Denmark</option>
+							<option value="GR" data-zip="10431">Greece</option>
+							<option value="LT" data-zip="06001">Lithuania</option>
+							<option value="CZ" data-zip="10000">Czech Republic</option>
+							<option value="RO" data-zip="010001">Romania</option>
+							<option value="AT" data-zip="1010">Austria</option>
+							<option value="HR" data-zip="10000">Croatia</option>
+							<option value="FI" data-zip="00100">Finland</option>
+							<option value="BG" data-zip="1000">Bulgaria</option>
+							<option value="SK" data-zip="81103">Slovakia</option>
+							<option value="GB" data-zip="">United Kingdom</option>
+							<option value="EE" data-zip="10111">Estonia</option>
+							<option value="LV" data-zip="1000">Latvia</option>
+							<option value="SI" data-zip="1000">Slovenia</option>
+							<option value="LU" data-zip="1232">Luxembourg</option>
+							<option value="CH" data-zip="">Switzerland</option>
+							<option value="US" data-zip="">United States</option>
+							<option value="BR" data-zip="">Brazil</option>
+							<option value="NO" data-zip="">Norway</option>
+							<option value="AU" data-zip="">Australia</option>
+							<option value="TR" data-zip="">Turkey</option>
+							<option value="CA" data-zip="">Canada</option>
+							<option value="CN" data-zip="">China</option>
+							<option value="IN" data-zip="">India</option>
+							<option value="MT" data-zip="">Malta</option>
+							<option value="MA" data-zip="">Morocco</option>
+							<option value="RS" data-zip="">Serbia</option>
+							<option value="CY" data-zip="">Cyprus</option>
+							<option value="MX" data-zip="">Mexico</option>
+							<option value="CO" data-zip="">Colombia</option>
+							<option value="AE" data-zip="">United Arab Emirates</option>
+							<option value="GE" data-zip="">Georgia</option>
+							<option value="IL" data-zip="">Israel</option>
+							<option value="UA" data-zip="">Ukraine</option>
+							<option value="CL" data-zip="">Chile</option>
+							<option value="PK" data-zip="">Pakistan</option>
+							<option value="PE" data-zip="">Peru</option>
+							<option value="KR" data-zip="">Korea, Republic of</option>
+							<option value="RU" data-zip="">Russian Federation</option>
+							<option value="ZA" data-zip="">South Africa</option>
+							<option value="IS" data-zip="">Iceland</option>
+							<option value="AL" data-zip="">Albania</option>
+							<option value="TH" data-zip="">Thailand</option>
+							<option value="TN" data-zip="">Tunisia</option>
+							<option value="AR" data-zip="">Argentina</option>
+							<option value="JP" data-zip="">Japan</option>
+							<option value="BA" data-zip="">Bosnia and Herzegovina</option>
+							<option value="PH" data-zip="">Philippines</option>
+							<option value="MY" data-zip="">Malaysia</option>
+							<option value="NZ" data-zip="">New Zealand</option>
+							<option value="CU" data-zip="">Cuba</option>
+							<option value="NP" data-zip="">Nepal</option>
+							<option value="ME" data-zip="">Montenegro</option>
+							<option value="SA" data-zip="">Saudi Arabia</option>
+							<option value="MD" data-zip="">Moldova, Republic of</option>
+							<option value="DZ" data-zip="">Algeria</option>
+							<option value="EC" data-zip="">Ecuador</option>
+							<option value="AM" data-zip="">Armenia</option>
+							<option value="BY" data-zip="">Belarus</option>
+							<option value="ID" data-zip="">Indonesia</option>
+							<option value="BD" data-zip="">Bangladesh</option>
+							<option value="QA" data-zip="">Qatar</option>
+							<option value="SG" data-zip="">Singapore</option>
+							<option value="VE" data-zip="">Venezuela, Bolivarian Republic of</option>
+							<option value="AZ" data-zip="">Azerbaijan</option>
+							<option value="MQ" data-zip="">Martinique</option>
+							<option value="KZ" data-zip="">Kazakhstan</option>
+							<option value="HK" data-zip="">Hong Kong</option>
+							<option value="IR" data-zip="">Iran, Islamic Republic of</option>
+							<option value="DO" data-zip="">Dominican Republic</option>
+							<option value="MK" data-zip="">Macedonia, the former Yugoslav Republic of</option>
+							<option value="CD" data-zip="">Congo, the Democratic Republic of the</option>
+							<option value="PA" data-zip="">Panama</option>
+							<option value="EG" data-zip="">Egypt</option>
+							<option value="BO" data-zip="">Bolivia, Plurinational State of</option>
+							<option value="TW" data-zip="">Taiwan, Province of China</option>
+							<option value="GI" data-zip="">Gibraltar</option>
+							<option value="MC" data-zip="">Monaco</option>
+							<option value="NG" data-zip="">Nigeria</option>
+							<option value="MF" data-zip="">Saint Martin</option>
+							<option value="VN" data-zip="">Viet Nam</option>
+							<option value="LK" data-zip="">Sri Lanka</option>
+							<option value="AD" data-zip="">Andorra</option>
+							<option value="BH" data-zip="">Bahrain</option>
+							<option value="KE" data-zip="">Kenya</option>
+							<option value="AN" data-zip="">Netherlands Antilles</option>
+							<option value="UZ" data-zip="">Uzbekistan</option>
+							<option value="AO" data-zip="">Angola</option>
+							<option value="CV" data-zip="">Cape Verde</option>
+							<option value="RE" data-zip="">Réunion</option>
+							<option value="CR" data-zip="">Costa Rica</option>
+							<option value="GH" data-zip="">Ghana</option>
+							<option value="CM" data-zip="">Cameroon</option>
+							<option value="GT" data-zip="">Guatemala</option>
+							<option value="JO" data-zip="">Jordan</option>
+							<option value="KW" data-zip="">Kuwait</option>
+							<option value="PY" data-zip="">Paraguay</option>
+							<option value="ZW" data-zip="">Zimbabwe</option>
+							<option value="CI" data-zip="">Côte d&#39;Ivoire</option>
+							<option value="IQ" data-zip="">Iraq</option>
+							<option value="UY" data-zip="">Uruguay</option>
+							<option value="PF" data-zip="">French Polynesia</option>
+							<option value="GP" data-zip="">Guadeloupe</option>
+							<option value="AF" data-zip="">Afghanistan</option>
+							<option value="CG" data-zip="">Congo</option>
+							<option value="JE" data-zip="">Jersey</option>
+							<option value="SN" data-zip="">Senegal</option>
+							<option value="SV" data-zip="">El Salvador</option>
+							<option value="NE" data-zip="">Niger</option>
+							<option value="PR" data-zip="">Puerto Rico</option>
+							<option value="MG" data-zip="">Madagascar</option>
+							<option value="MW" data-zip="">Malawi</option>
+							<option value="SJ" data-zip="">Svalbard and Jan Mayen</option>
+							<option value="SZ" data-zip="">Swaziland</option>
+							<option value="SY" data-zip="">Syrian Arab Republic</option>
+							<option value="KH" data-zip="">Cambodia</option>
+							<option value="HN" data-zip="">Honduras</option>
+							<option value="JM" data-zip="">Jamaica</option>
+							<option value="KG" data-zip="">Kyrgyzstan</option>
+							<option value="LB" data-zip="">Lebanon</option>
+							<option value="LI" data-zip="">Liechtenstein</option>
+							<option value="MR" data-zip="">Mauritania</option>
+							<option value="MM" data-zip="">Myanmar</option>
+							<option value="OM" data-zip="">Oman</option>
+							<option value="BT" data-zip="">Bhutan</option>
+							<option value="TD" data-zip="">Chad</option>
+							<option value="LA" data-zip="">Lao People&#39;s Democratic Republic</option>
+							<option value="LY" data-zip="">Libyan Arab Jamahiriya</option>
+							<option value="ML" data-zip="">Mali</option>
+							<option value="SR" data-zip="">Suriname</option>
+							<option value="TG" data-zip="">Togo</option>
+							<option value="UG" data-zip="">Uganda</option>
+							<option value="VI" data-zip="">Virgin Islands, U.S.</option>
+							<option value="ZM" data-zip="">Zambia</option>
+							<option value="AG" data-zip="">Antigua and Barbuda</option>
+							<option value="GQ" data-zip="">Equatorial Guinea</option>
+							<option value="ET" data-zip="">Ethiopia</option>
+							<option value="GM" data-zip="">Gambia</option>
+							<option value="GD" data-zip="">Grenada</option>
+							<option value="GN" data-zip="">Guinea</option>
+							<option value="MU" data-zip="">Mauritius</option>
+							<option value="MN" data-zip="">Mongolia</option>
+							<option value="MZ" data-zip="">Mozambique</option>
+							<option value="NA" data-zip="">Namibia</option>
+							<option value="SM" data-zip="">San Marino</option>
+							<option value="SL" data-zip="">Sierra Leone</option>
+							<option value="TC" data-zip="">Turks and Caicos Islands</option>
+							<option value="EH" data-zip="">Western Sahara</option>
+							<option value="AX" data-zip="">Åland Islands</option>
+							<option value="AW" data-zip="">Aruba</option>
+							<option value="BB" data-zip="">Barbados</option>
+							<option value="BJ" data-zip="">Benin</option>
+							<option value="IO" data-zip="">British Indian Ocean Territory</option>
+							<option value="CF" data-zip="">Central African Republic</option>
+							<option value="DM" data-zip="">Dominica</option>
+							<option value="FO" data-zip="">Faroe Islands</option>
+							<option value="TF" data-zip="">French Southern Territories</option>
+							<option value="GL" data-zip="">Greenland</option>
+							<option value="GY" data-zip="">Guyana</option>
+							<option value="VA" data-zip="">Holy See (Vatican City State)</option>
+							<option value="MO" data-zip="">Macao</option>
+							<option value="MV" data-zip="">Maldives</option>
+							<option value="FM" data-zip="">Micronesia, Federated States of</option>
+							<option value="MS" data-zip="">Montserrat</option>
+							<option value="NC" data-zip="">New Caledonia</option>
+							<option value="NI" data-zip="">Nicaragua</option>
+							<option value="NF" data-zip="">Norfolk Island</option>
+							<option value="PG" data-zip="">Papua New Guinea</option>
+							<option value="RW" data-zip="">Rwanda</option>
+							<option value="SC" data-zip="">Seychelles</option>
+							<option value="SO" data-zip="">Somalia</option>
+							<option value="SD" data-zip="">Sudan</option>
+							<option value="TJ" data-zip="">Tajikistan</option>
+							<option value="TZ" data-zip="">Tanzania, United Republic of</option>
+							<option value="TM" data-zip="">Turkmenistan</option>
+							<option value="UM" data-zip="">United States Minor Outlying Islands</option>
+							<option value="WF" data-zip="">Wallis and Futuna</option>
+							<option value="YE" data-zip="">Yemen</option>
+							<option value="AS" data-zip="">American Samoa</option>
+							<option value="AI" data-zip="">Anguilla</option>
+							<option value="AQ" data-zip="">Antarctica</option>
+							<option value="BS" data-zip="">Bahamas</option>
+							<option value="BZ" data-zip="">Belize</option>
+							<option value="BM" data-zip="">Bermuda</option>
+							<option value="BW" data-zip="">Botswana</option>
+							<option value="BV" data-zip="">Bouvet Island</option>
+							<option value="BN" data-zip="">Brunei Darussalam</option>
+							<option value="BF" data-zip="">Burkina Faso</option>
+							<option value="BI" data-zip="">Burundi</option>
+							<option value="KY" data-zip="">Cayman Islands</option>
+							<option value="CX" data-zip="">Christmas Island</option>
+							<option value="CC" data-zip="">Cocos (Keeling) Islands</option>
+							<option value="KM" data-zip="">Comoros</option>
+							<option value="CK" data-zip="">Cook Islands</option>
+							<option value="DJ" data-zip="">Djibouti</option>
+							<option value="ER" data-zip="">Eritrea</option>
+							<option value="FK" data-zip="">Falkland Islands (Malvinas)</option>
+							<option value="FJ" data-zip="">Fiji</option>
+							<option value="GF" data-zip="">French Guiana</option>
+							<option value="GA" data-zip="">Gabon</option>
+							<option value="GU" data-zip="">Guam</option>
+							<option value="GG" data-zip="">Guernsey</option>
+							<option value="GW" data-zip="">Guinea-Bissau</option>
+							<option value="HT" data-zip="">Haiti</option>
+							<option value="HM" data-zip="">Heard Island and McDonald Islands</option>
+							<option value="IM" data-zip="">Isle of Man</option>
+							<option value="KI" data-zip="">Kiribati</option>
+							<option value="LS" data-zip="">Lesotho</option>
+							<option value="LR" data-zip="">Liberia</option>
+							<option value="MH" data-zip="">Marshall Islands</option>
+							<option value="YT" data-zip="">Mayotte</option>
+							<option value="NR" data-zip="">Nauru</option>
+							<option value="NU" data-zip="">Niue</option>
+							<option value="MP" data-zip="">Northern Mariana Islands</option>
+							<option value="PW" data-zip="">Palau</option>
+							<option value="PS" data-zip="">Palestinian Territory, Occupied</option>
+							<option value="PN" data-zip="">Pitcairn</option>
+							<option value="BL" data-zip="">Saint Barthélemy</option>
+							<option value="SH" data-zip="">Saint Helena</option>
+							<option value="KN" data-zip="">Saint Kitts and Nevis</option>
+							<option value="LC" data-zip="">Saint Lucia</option>
+							<option value="PM" data-zip="">Saint Pierre and Miquelon</option>
+							<option value="VC" data-zip="">Saint Vincent and the Grenadines</option>
+							<option value="WS" data-zip="">Samoa</option>
+							<option value="ST" data-zip="">Sao Tome and Principe</option>
+							<option value="SB" data-zip="">Solomon Islands</option>
+							<option value="GS" data-zip="">South Georgia and the South Sandwich Islands</option>
+							<option value="TL" data-zip="">Timor-Leste</option>
+							<option value="TK" data-zip="">Tokelau</option>
+							<option value="TO" data-zip="">Tonga</option>
+							<option value="TT" data-zip="">Trinidad and Tobago</option>
+							<option value="TV" data-zip="">Tuvalu</option>
+							<option value="VU" data-zip="">Vanuatu</option>
+							<option value="VG" data-zip="">Virgin Islands, British</option>
+						</select>
+					</div>
+					<div class="form-group form-group-weight base-weight-group">
+						<div class="input-group">
+							<div class="input-group-prepend"> <span class="input-group-text">Weight:</span> </div>
+							<input type="text" class="form-control base-weight-input" style="width:80px;">
+							<div class="input-group-append"> <span class="input-group-text">kg</span> </div>
+						</div>
+					</div>
+					<div class="form-group form-group-plus">
+						<button type="button" class="btn btn-circle btn-outline-primary form-expand-btn">+</button>
+					</div>
+					<div class="form-group form-group-btn">
+						<button type="button" class="btn btn-primary btn-block search-btn">Search</button>
+					</div>
+				</div>
+				<div class="price-switcher-wrap d-none">
+					<div class="swiper-container" id="price-switcher-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide business-price-slide">
+								<div class="business-price-switcher price-switcher d-flex align-items-center">
+									<div class="business-price-switcher-title text-uppercase">Business
+										<br>Price</div>
+									<input id="business-price-checkbox" class="price-switcher-checkbox" name="bp" value="1" type="checkbox">
+									<label class="price-switcher-label" for="business-price-checkbox">
+										<span class="switcher-label-mark">
+											<svg width="18" height="13" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16.943.882a1.172 1.172 0 0 0-1.665 0L6.54 9.632 2.87 5.948a1.199 1.199 0 1 0-1.666 1.724l4.503 4.504a1.173 1.173 0 0 0 1.666 0l9.57-9.57a1.172 1.172 0 0 0 0-1.725Z" />
+											</svg>
+										</span>
+									</label>
 								</div>
 							</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+							<div class="swiper-slide">
+								<div class="price-switcher">
+									<input id="parcel-radio" name="price_type" value="parcel" type="radio" class="price-switcher-checkbox" checked="checked">
+									<label class="price-switcher-label" for="parcel-radio">
+										<span class="switcher-label-icon">
+											<svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M24.369 8.82118L21.9982 1.70881ZM24.3695 8.8227C24.4586 9.0801 24.5 9.34651 24.5 9.61563V22C24.5 23.3803 23.3803 24.5 22 24.5H2.5C1.11974 24.5 0 23.3803 0 22V9.61563C0 9.34284 0.0472298 9.07759 0.129536 8.82553L0.130012 8.82407L2.50177 1.70881C2.84054 0.68771 3.79417 0 4.87187 0H19.6281C20.7058 0 21.6594 0.687749 21.9982 1.70881M24.3695 8.8227L24.369 8.82118ZM2.05154 9.375L4.39618 2.34109C4.46517 2.13792 4.65607 2 4.87187 2H11.25V9.375H2.05154ZM22 22.5C22.2744 22.5 22.5 22.2744 22.5 22V11.375H2V22C2 22.2744 2.22557 22.5 2.5 22.5H22ZM22.4485 9.375H13.25V2H19.6281C19.8438 2 20.0345 2.13734 20.1036 2.34039L22.4485 9.375Z" />
+											</svg>
+										</span>
+										<span class="switcher-label-text">Parcel</span>
+										<span class="switcher-label-mark">
+											<svg width="18" height="13" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16.943.882a1.172 1.172 0 0 0-1.665 0L6.54 9.632 2.87 5.948a1.199 1.199 0 1 0-1.666 1.724l4.503 4.504a1.173 1.173 0 0 0 1.666 0l9.57-9.57a1.172 1.172 0 0 0 0-1.725Z" />
+											</svg>
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="price-switcher">
+									<input id="pallet-radio" name="price_type" value="pallet" type="radio" class="price-switcher-checkbox" data-index="2">
+									<label class="price-switcher-label" for="pallet-radio">
+										<span class="switcher-label-icon">
+											<svg width="29" height="24" viewBox="0 0 29 24" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M7.78387 2.05H21.0484V11.25H7.78387V2.05ZM2.90323 17.05V21.75H0.625806C0.284907 21.75 0 22.0396 0 22.4V23.15C0 23.5104 0.284907 23.8 0.625806 23.8H28.2064C28.5473 23.8 28.8323 23.5104 28.8323 23.15V22.4C28.8323 22.0396 28.5473 21.75 28.2064 21.75H25.929V17.05H28.2064C28.5473 17.05 28.8323 16.7604 28.8323 16.4V15.65C28.8323 15.2896 28.5473 15 28.2064 15H0.625806C0.284907 15 0 15.2896 0 15.65V16.4C0 16.7604 0.284907 17.05 0.625806 17.05H2.90323ZM7.98387 21.75H4.88065V17.05H7.98387V21.75ZM18.871 21.75H9.96129V17.05H18.871V21.75ZM23.9516 21.75H20.8484V17.05H23.9516V21.75ZM6.43226 13.3H22.4C22.7409 13.3 23.0258 13.0104 23.0258 12.65V0.65C23.0258 0.289612 22.7409 0 22.4 0H6.43226C6.09136 0 5.80645 0.289612 5.80645 0.65V12.65C5.80645 13.0104 6.09136 13.3 6.43226 13.3Z" />
+											</svg>
+										</span>
+										<span class="switcher-label-text">Pallet</span>
+										<span class="switcher-label-mark">
+											<svg width="18" height="13" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16.943.882a1.172 1.172 0 0 0-1.665 0L6.54 9.632 2.87 5.948a1.199 1.199 0 1 0-1.666 1.724l4.503 4.504a1.173 1.173 0 0 0 1.666 0l9.57-9.57a1.172 1.172 0 0 0 0-1.725Z" />
+											</svg>
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="price-switcher">
+									<input id="truck-radio" name="price_type" value="truck" type="radio" class="price-switcher-checkbox" data-index="3">
+									<label class="price-switcher-label" for="truck-radio">
+										<span class="switcher-label-icon">
+											<svg width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M3.27281 15.2308H2.56838C2.37488 15.2308 2.23007 15.1692 2.13487 15.0774C2.04032 14.9862 1.97892 14.85 1.97892 14.6692V4.00769C1.97892 2.90641 2.98777 1.92308 4.1473 1.92308H16.7787C17.9382 1.92308 18.9471 2.90641 18.9471 4.00769V15.2308H11.3353C10.8978 13.4596 9.27527 12.1846 7.30407 12.1846C5.33287 12.1846 3.71032 13.4596 3.27281 15.2308ZM3.27283 17.1538H2.56838C1.20164 17.1538 0 16.0049 0 14.6692V4.00769C0 1.7582 1.8332 0 4.1473 0H16.7787C18.6927 0 20.2779 1.20198 20.7689 2.89355H22.9375C25.381 2.89355 27.5109 4.30797 28.3333 6.36903L28.3337 6.37027L30.2242 10.9293C30.3075 11.0912 30.3542 11.2231 30.3779 11.3603C30.4006 11.4916 30.4006 11.6209 30.4006 11.7651V14.669C30.4006 15.6971 29.6889 16.6102 28.7473 16.9789C28.3765 18.8401 26.7127 20.2 24.6771 20.2C22.624 20.2 20.9495 18.816 20.5978 16.9329C20.422 17.0785 20.1918 17.1538 19.9365 17.1538H11.3353C10.8978 18.925 9.27524 20.2 7.30407 20.2C5.3329 20.2 3.71037 18.925 3.27283 17.1538ZM20.926 14.4569C21.5865 13.1009 23.0065 12.1846 24.6771 12.1846C26.2198 12.1846 27.5489 12.9653 28.2638 14.1544V11.6626L26.3843 7.13018C25.7841 5.68276 24.4366 4.81664 22.9375 4.81664H20.926V14.4569ZM26.8455 16.1923C26.8455 15.091 25.8366 14.1076 24.6771 14.1076C23.5176 14.1076 22.5087 15.091 22.5087 16.1923C22.5087 17.2935 23.5176 18.2769 24.6771 18.2769C25.8366 18.2769 26.8455 17.2935 26.8455 16.1923ZM9.47246 16.1923C9.47246 15.091 8.4636 14.1076 7.30407 14.1076C6.14454 14.1076 5.13568 15.091 5.13568 16.1923C5.13568 17.2935 6.14454 18.2769 7.30407 18.2769C8.4636 18.2769 9.47246 17.2935 9.47246 16.1923Z" />
+											</svg>
+										</span>
+										<span class="switcher-label-text">Freight</span>
+										<span class="switcher-label-mark">
+											<svg width="18" height="13" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16.943.882a1.172 1.172 0 0 0-1.665 0L6.54 9.632 2.87 5.948a1.199 1.199 0 1 0-1.666 1.724l4.503 4.504a1.173 1.173 0 0 0 1.666 0l9.57-9.57a1.172 1.172 0 0 0 0-1.725Z" />
+											</svg>
+										</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="add-parcel-wrap">
+					<div class="add-parcel-title">Parcels</div>
+					<div class="parcel-table"> </div>
+				</div>
+				<div class="home-form-preloader"></div>
+			</form>
 			
 			
 			<div class="delivery-options-wrap"></div>
@@ -1845,12 +1250,12 @@ Parcel from Greece
 	<script defer type="text/javascript" src="static/plugins/swiper/dist/js/swiper.jquery.min.js"></script>
 	<script defer type="text/javascript" src="static/vendors/moment/moment.min.js"></script>
 	<script defer type="text/javascript" src="static/vendors/moment/moment-timezone-with-data-10-year-range.min.js"></script>
-	<div class="modal fade" id="feedback-modal" tabindex="-1" aria-labelledby="feedback-modal-label" aria-hidden="true">
+	<!-- <div class="modal fade" id="feedback-modal" tabindex="-1" aria-labelledby="feedback-modal-label" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content"> </div>
 		</div>
-	</div>
-	<script id="feedback-modal-content" type="x-tmpl-mustache">
+	</div> -->
+	<!-- <script id="feedback-modal-content" type="x-tmpl-mustache">
 		<div class="modal-header">
 			<h5 class="modal-title" id="feedback-modal-label">
       <span class="modal-title-text">[[ modalTitle ]]</span>
@@ -1909,7 +1314,7 @@ Parcel from Greece
 			<div class="mt-0 mb-2">Please register or log in to get a special quote.</div> <a href="/en/register/" class="btn btn-primary">Register</a> [[/isAuthenticated]] [[/showSalesForm]] [[/showAlert]]
 			<button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
 		</div>
-	</script>
+	</script> -->
 	<script id="shipping-template" type="x-tmpl-mustache">
 		<div id="option-[[ id ]]" class="home-shipping-option" data-extra-protection="[[ extra_protection ]]">
 			<div class="home-shipping-main"> [[#is_cheapest]]
