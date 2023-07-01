@@ -1,7 +1,7 @@
 body {
     font-family: Roboto,sans-serif;
     font-size: 14px;
-    color: #707070;
+    color: #000;
     background-image: url(../images/header-bg.svg);
     background-repeat: no-repeat;
     background-size: 100% 340px;
@@ -6487,8 +6487,65 @@ body.show-loader .page-loader {
     }
 }
 
+/* Custom */
+
+.about {
+	background-image: url(../images/about-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.title:before {
+	content: "";
+    position: absolute;
+    height: 40px;
+    width: 8px;
+    left: -90px;
+    top: 3%;
+    transform: translate(-50%,-50%);
+    background: #ff0039;
+    transition: all 1s ease-in-out;
+}
+
+.title {
+	color: #fff;
+}
+
+.about p {
+	color: #fff;
+}
+
+.specification {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px 0px 30px 0px;
+}
+
+.specification-content {
+	color: #fff;
+	padding-left: 25px;
+}
+
+.services .card-1 {
+	background-color: rgba(34, 108, 212, 0.7);
+}
+
+.services .card-2 {
+	background-color: rgba(187, 117, 12, 0.7);
+}
+
+.services .card-3 {
+	background-color: rgba(156, 34, 61, 0.7);
+}
+
+.services h4, .services p {
+	color: #fff;
+}
+
 @media screen and (min-width: 1024px) {
 	.logo {
-		width: 250px;
+		width: 150px;
 	}
 }
