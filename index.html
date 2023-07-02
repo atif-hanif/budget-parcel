@@ -43,13 +43,13 @@
 	<link rel="stylesheet" type="text/css" href="static/vendors/bootstrap/css/bootstrap1.css">
 	<link rel="stylesheet" type="text/css" href="static/vendors/bootstrap/css/bootstrap2.css">
 	<link rel="stylesheet" type="text/css" href="static/vendors/flags_sprite/css/flags.css" />
-	<link rel="stylesheet" type="text/css" href="static/css/styles.css">
+	<link href="static/css/font.css" type="text/css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="static/plugins/select2/dist/css/select2.min.css" />
 	<link rel="stylesheet" type="text/css" href="static/plugins/swiper/dist/css/swiper.min.css" />
 	<link rel="stylesheet" type="text/css" href="static/trust_pilot/css/tp-widget.css" />
 	<link rel="stylesheet" type="text/css" href="static/css/select2-custom.css" />
 	<link rel="stylesheet" type="text/css" href="static/vendors/font-awsome/css/all.css" />
-	<link href="static/css/font.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/css/styles.css">
 	<title>Budget Parcel | Sending Parcel Worldwide with just a Click</title>
 	<meta name="description" content="Ecoparcel.eu Fast, cheap parcel delivery in all Europe. Parcel tracking & free insurance. Send and track parcel safely, using best delivery service!">
 	<script type="application/ld+json"> { "@context": "https://schema.org", "@type": "Organization", "name": "Ecoparcel", "legalName": "Smartway Europe Limited", "url": "http://www.ecoparcel.eu", "logo": "https://www.ecoparcel.eu/static/images/logo.png", "description": "Fast, cheap parcel delivery in all Europe", "foundingDate": "2010", "contactPoint": { "@type": "ContactPoint", "contactType": "customer support", "email": "support@ecoparcel.eu", "contactOption": ["HearingImpairedSupported", "TollFree"], "availableLanguage": ["English", "French", "Spanish", "Italian"] }, "sameAs": [ "http://www.ecoparcel.net", "http://www.ecoparcel.de/", "http://www.ecoparcel.fr/", "http://www.ecoparcel.co.uk/", "http://www.ecoparcel.it/", "https://www.facebook.com/ecoparcel" ] } </script>
@@ -83,9 +83,11 @@
 							<a class="dropdown-item" href="#" data-code="hr"> <span class="flag flag-15 flag-hr mr-1"></span> Croatian </a>
 						</div>
 					</div>
-					<a href="login-register.html" class="btn btn-light btn-small-padding btn-with-auto"> <span class="d-none d-sm-inline-block">Login / Register</span>
+					<a href="#" class="btn btn-light btn-small-padding btn-with-auto" data-toggle="modal" data-target="#login-modal">
+						<span class="d-none d-sm-inline-block">Sign In</span>
 						<svg class="d-sm-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height: 19px;">
-							<path fill="#9b9a99" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" /> </svg>
+							<path fill="#9b9a99" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" />
+						</svg>
 					</a>
 				</div>
 				<div class="collapse navbar-collapse order-xl-1" id="top-navbar-collapse">
@@ -800,7 +802,7 @@
 				</div>
 			</div>
 			<div class="row mt-5">
-				<div class="col-md-4">
+				<div class="col-lg-4">
 					<div class="card">
 						<img src="static/images/cell_inner_05.jpg" alt="">
 						<div class="card-img-overlay card-1 d-flex flex-column">
@@ -810,7 +812,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-lg-4 mt-3 mt-lg-0">
 					<div class="card">
 						<img src="static/images/cell_inner_06.jpg" alt="">
 						<div class="card-img-overlay card-2 d-flex flex-column">
@@ -820,7 +822,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-lg-4 mt-3 mt-lg-0">
 					<div class="card">
 						<img src="static/images/cell_inner_07.jpg" alt="">
 						<div class="card-img-overlay card-3 d-flex flex-column">
@@ -834,13 +836,13 @@
 		</div>
 		<!-- End Services -->
 
-		<!-- Start Courier -->
-		<div class="container-fluid mt-5">
+		<!-- Start Why Choose Us -->
+		<div class="container-fluid mt-5 why-choose-us">
 			<div class="row">
 				<div class="col-lg-2"></div>
 				<div class="col-lg-6">
 					<h1>Cheap Courier Special Service you can always trust</h1>
-					<p class="pt-3">Our company offers a comprehensive range of express, times and easy economy delivery services. We provide affordable postal.</p>
+					<h5 class="pt-3">Our company offers a comprehensive range of express, times and easy economy delivery services. We provide affordable postal.</h5>
 					<div class="row text-center mt-5">
 						<div class="col-md-4">
 							<img src="static/images/express-delivery.png" alt="Express Delivery">
@@ -867,7 +869,95 @@
 				</div>
 			</div>
 		</div>
+		<!-- End Why Choose Us -->
+
+		<!-- Start Courier -->
+		<div class="container-fluid mt-5 courier">
+			<div class="row">
+				<div class="col-md-6 col-lg-3 courier1">
+					<img src="static/images/fast-delivery.jpg" alt="Fast Delivery" class="img-fluid courier1-img">
+					<div class="overlay1">
+						<div class="text1">
+							<img src="static/images/fast-delivery-icon.png" alt="Fast Delivery Icon" width="64px">
+							<h5 class="pt-3">Fast Delivery</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 courier2">
+					<img src="static/images/postal-service.jpg" alt="Postal Service" class="img-fluid courier2-img">
+					<div class="overlay2">
+						<div class="text2">
+							<img src="static/images/postal-service-icon.png" alt="Postal Service Icon" width="64px">
+							<h5 class="pt-3">Postal Service</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 courier3">
+					<img src="static/images/modern-technology.jpg" alt="Modern Technology" class="img-fluid courier3-img">
+					<div class="overlay3">
+						<div class="text3">
+							<img src="static/images/modern-technology-icon.png" alt="Modern Technology Icon" width="64px">
+							<h5 class="pt-3">Modern Technology</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 courier4">
+					<img src="static/images/package-delivery.jpg" alt="Package Delivery" class="img-fluid courier4-img">
+					<div class="overlay4">
+						<div class="text4">
+							<img src="static/images/package-delivery-icon.png" alt="Package Delivery Icon" width="64px">
+							<h5 class="pt-3">Package Delivery</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- End Courier -->
+
+		<!-- Start Contact -->
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>Keep in touch</h1>
+					<h5 class="pt-3">Contact one of our specialist local offices.</h5>
+					<form action="/action_page.php">
+						<div class="row mt-4">
+							<div class="col">
+								<input type="text" class="form-control" id="name" placeholder="Full Name" name="name">
+							</div>
+							<div class="col">
+								<input type="text" class="form-control" id="email" placeholder="Email Address" name="email">
+							</div>
+						</div>
+						<div class="row mt-3">
+							<div class="col">
+								<textarea class="form-control" rows="9" id="message" placeholder="Message"></textarea>
+							</div>
+						  </div>
+						<button type="submit" class="btn btn-secondary mt-3">Send Request</button>
+					  </form>
+				</div>
+				<div class="col-lg-6">
+					<h1>Our Office</h1>
+					<h5 class="pt-3">Here you’ll find office addresses and shipping guidelines.</h5>
+					<p class="pt-3">Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources. Credibly innovate granular sources.</p>
+					<p class="pt-3">Seamlessly empower fully researched growth <br>New York</p>
+					<p class="pt-3">Phone: + 88 (0) 101 1245 4578 <br> Fax: + 88 (0) 101 1245 4599</p>
+					<p class="pt-3"><a href="mailto:info@budgetparcel.com">info@budgetparcel.com</a></p>
+				</div>
+			</div>
+		</div>
+		<!-- End Contact -->
+
+		<!-- Start Map -->
+		<div class="container-fluid mt-5 map">
+			<div class="row">
+				<div class="col-12">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9515.046657119778!2d-6.3174365!3d53.4012032!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867137a5656b79d%3A0x434e5a7558231719!2sBudget%20Parcel!5e0!3m2!1sen!2s!4v1688295714610!5m2!1sen!2s" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</div>
+		<!-- End Map -->
 
 		<!-- Start Partners -->
 		<!-- <div class="container mt-5">
@@ -1042,108 +1132,51 @@
 		</div> -->
 	</main>
 	<footer class="footer">
-		<div class="footer-bg"></div>
 		<div class="container">
-			<div class="row">
-				<div class="col-xl-8 order-xl-1 footer-delivery-column"> <a href="international-delivery/index.html" class="f_18 uppercase footer-header" rel="nofollow">International Deliveries</a>
-					<div class="row">
-						<div class="col-6 col-md-3">
-							<ul class="footer-link-list link-list-scroll">
-								<li> <a href="send-parcel-to-spain/index.html" title="Parcel to Spain">Parcel to Spain</a> </li>
-								<li> <a href="send-parcel-to-italy/index.html" title="Parcel to Italy">Parcel to Italy</a> </li>
-								<li> <a href="send-parcel-to-united-kingdom/index.html" title="Parcel to United Kingdom">Parcel to United Kingdom</a> </li>
-								<li> <a href="send-parcel-to-ireland/index.html" title="Parcel to Ireland">Parcel to Ireland</a> </li>
-								<li> <a href="send-parcel-to-germany/index.html" title="Parcel to Germany">Parcel to Germany</a> </li>
-								<li> <a href="send-parcel-to-france/index.html" title="Parcel to France">Parcel to France</a> </li>
-								<li> <a href="send-parcel-to-denmark/index.html" title="Parcel to Denmark">Parcel to Denmark</a> </li>
-								<li> <a href="send-parcel-to-hungary/index.html" title="Parcel to Hungary">Parcel to Hungary</a> </li>
-								<li> <a href="send-parcel-to-portugal/index.html" title="Parcel to Portugal">Parcel to Portugal</a> </li>
-								<li> <a href="send-parcel-to-poland/index.html" title="Parcel to Poland">Parcel to Poland</a> </li>
-								<li> <a href="send-parcel-to-romania/index.html" title="Parcel to Romania">Parcel to Romania</a> </li>
-								<li> <a href="send-parcel-to-belgium/index.html" title="Parcel to Belgium">Parcel to Belgium</a> </li>
-								<li> <a href="send-parcel-to-czechia/index.html" title="Parcel to Czech Republic">Parcel to Czech Republic</a> </li>
-								<li> <a href="send-parcel-to-slovakia/index.html" title="Parcel to Slovakia">Parcel to Slovakia</a> </li>
-								<li> <a href="send-parcel-to-finland/index.html" title="Parcel to Finland">Parcel to Finland</a> </li>
-								<li> <a href="send-parcel-to-croatia/index.html" title="Parcel to Croatia">Parcel to Croatia</a> </li>
-								<li> <a href="send-parcel-to-bulgaria/index.html" title="Parcel to Bulgaria">Parcel to Bulgaria</a> </li>
-								<li> <a href="send-parcel-to-lithuania/index.html" title="Parcel to Lithuania">Parcel to Lithuania</a> </li>
-								<li> <a href="send-parcel-to-austria/index.html" title="Parcel to Austria">Parcel to Austria</a> </li>
-								<li> <a href="send-parcel-to-latvia/index.html" title="Parcel to Latvia">Parcel to Latvia</a> </li>
-								<li> <a href="send-parcel-to-slovenia/index.html" title="Parcel to Slovenia">Parcel to Slovenia</a> </li>
-								<li> <a href="send-parcel-to-estonia/index.html" title="Parcel to Estonia">Parcel to Estonia</a> </li>
-								<li> <a href="send-parcel-to-sweden/index.html" title="Parcel to Sweden">Parcel to Sweden</a> </li>
-								<li> <a href="send-parcel-to-netherlands/index.html" title="Parcel to Netherlands">Parcel to Netherlands</a> </li>
-								<li> <a href="send-parcel-to-luxembourg/index.html" title="Parcel to Luxembourg">Parcel to Luxembourg</a> </li>
-								<li> <a href="send-parcel-to-greece/index.html" title="Parcel to Greece">Parcel to Greece</a> </li>
-							</ul>
-						</div>
-						<div class="col-6 col-md-3">
-							<ul class="footer-link-list link-list-scroll">
-								<li><a href="parcel/from-spain/index.html" title="Parcel from Spain">Parcel from Spain</a></li>
-								<li><a href="parcel/from-italy/index.html" title="Parcel from Italy">Parcel from Italy</a></li>
-								<li><a href="parcel/from-ireland/index.html" title="Parcel from Ireland">Parcel from Ireland</a></li>
-								<li><a href="parcel/from-germany/index.html" title="Parcel from Germany">Parcel from Germany</a></li>
-								<li><a href="parcel/from-france/index.html" title="Parcel from France">Parcel from France</a></li>
-								<li><a href="parcel/from-denmark/index.html" title="Parcel from Denmark">Parcel from Denmark</a></li>
-								<li><a href="parcel/from-hungary/index.html" title="Parcel from Hungary">Parcel from Hungary</a></li>
-								<li><a href="parcel/from-portugal/index.html" title="Parcel from Portugal">Parcel from Portugal</a></li>
-								<li><a href="parcel/from-poland/index.html" title="Parcel from Poland">Parcel from Poland</a></li>
-								<li><a href="parcel/from-romania/index.html" title="Parcel from Romania">Parcel from Romania</a></li>
-								<li><a href="parcel/from-belgium/index.html" title="Parcel from Belgium">Parcel from Belgium</a></li>
-								<li><a href="parcel/from-czech-republic/index.html" title="Parcel from Czech Republic">Parcel from Czech Republic</a></li>
-								<li><a href="parcel/from-slovakia/index.html" title="Parcel from Slovakia">Parcel from Slovakia</a></li>
-								<li><a href="parcel/from-finland/index.html" title="Parcel from Finland">Parcel from Finland</a></li>
-								<li><a href="parcel/from-croatia/index.html" title="Parcel from Croatia">Parcel from Croatia</a></li>
-								<li><a href="parcel/from-bulgaria/index.html" title="Parcel from Bulgaria">Parcel from Bulgaria</a></li>
-								<li><a href="parcel/from-lithuania/index.html" title="Parcel from Lithuania">Parcel from Lithuania</a></li>
-								<li><a href="parcel/from-austria/index.html" title="Parcel from Austria">Parcel from Austria</a></li>
-								<li><a href="parcel/from-latvia/index.html" title="Parcel from Latvia">Parcel from Latvia</a></li>
-								<li><a href="parcel/from-slovenia/index.html" title="Parcel from Slovenia">Parcel from Slovenia</a></li>
-								<li><a href="parcel/from-estonia/index.html" title="Parcel from Estonia">Parcel from Estonia</a></li>
-								<li><a href="parcel/from-sweden/index.html" title="Parcel from Sweden">Parcel from Sweden</a></li>
-								<li><a href="parcel/from-netherlands/index.html" title="Parcel from Netherlands">Parcel from Netherlands</a></li>
-								<li><a href="parcel/from-luxembourg/index.html" title="Parcel from Luxembourg">Parcel from Luxembourg</a></li>
-								<li><a href="parcel/from-greece/index.html" title="Parcel from Greece">Parcel from Greece</a></li>
-							</ul>
-						</div>
-						<div class="col-6 col-md-3">
-							<ul class="footer-link-list">
-								<li> <a href="#" title="Courier Services">Courier Services</a> </li>
-								<li> <a href="#" title="Cities Serviced" rel="nofollow">Cities Serviced</a> </li>
-								<li> <a href="#" title="Marketplace Selling Guides">Marketplace Selling Guides</a> </li>
-								<li> <a href="#" title="Delivery Surcharges">Delivery Surcharges</a> </li>
-								<li> <a href="#" title="Pallet Delivery">Pallet Delivery</a> </li>
-							</ul>
-						</div>
-						<div class="col-6 col-md-3">
-							<ul class="footer-link-list">
-								<li> <a href="#" title="Volumetric Weight">Volumetric Weight</a> </li>
-								<li> <a href="restricted-items/index.html" title="Prohibited & Restricted Items" rel="nofollow">Prohibited & Restricted Items</a> </li>
-								<li> <a href="blog/amazon-returns/index.html" title="Amazon Returns" rel="nofollow">Amazon Returns</a> </li>
-								<li> <a href="blog/integrations/index.html" title="Integrations & API" rel="nofollow">Integrations & API</a> </li>
-								<li> <a href="#" title="Marketplace Selling Guides">Marketplace Selling Guides</a> </li>
-							</ul>
-						</div>
-					</div>
+			<div class="row get-quote">
+				<div class="col-lg-6">
+					<h1>Contact us now to get quote</h1>
 				</div>
-				<div class="col-xl-4 order-xl-0"> <a href="about/index.html" class="footer-header" rel="nofollow">About Us</a>
-					<div class="row">
-						<div class="col-6">
-							<ul class="footer-link-list">
-								<li> <a href="register/index.html" title="Open a Business Account">Open a Business Account</a> </li>
-								<li> <a href="reviews/index.html" title="Reviews">Reviews</a> </li>
-							</ul>
-						</div>
-						<div class="col-6">
-							<ul class="footer-link-list">
-								<li> <a rel="nofollow" href="help-center/index.html" title="FAQs">FAQs</a> </li>
-								<li> <a rel="nofollow" href="help-center/index.html" title="Contacts">Contacts</a> </li>
-							</ul>
-						</div>
-					</div>
-					<div class="row mt-3">
-						<div class="col-6"> <img class="mb-3" src="static/images/footer-logo.png" height="29"> </div>
-						<div class="col-6"> <img class="mr-2 mb-3" src="static/images/visa-icon.svg"> <img class="mr-2 mb-3" src="static/images/mc-icon.svg"> <img class="mr-2 mb-3" src="static/images/paypal-icon.svg"> </div>
+				<div class="col-lg-6">
+					<button type="submit" class="btn btn-secondary float-right w-50">Give Me Free Quote</button>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-md-6 col-lg-3">
+					<h3>About Us</h3>
+					<p class="pt-3">Sometimes goods can arrive early when they are being brought into the country. Other times items need a place to be stored and override the digital divide with additional clickthroughs.</p>
+					<i class="fa-brands fa-facebook-f facebook"></i>
+					<i class="fa-brands fa-twitter twitter"></i>
+					<i class="fa-brands fa-youtube youtube"></i>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<img src="static/images/about-us-footer-large.png" alt="" class="img-fluid">
+				</div>
+				<div class="col-md-6 col-lg-3 mt-3 mt-lg-0">
+					<h3>Popular Categories</h3>
+					<ul class="nav flex-column footer-menu">
+						<li class="nav-item">
+						  	<a class="nav-link" href="#">LOCAL MOVING</a>
+						</li>
+						<li class="nav-item">
+						  	<a class="nav-link" href="#">INTERNATIONAL MOVING</a>
+						</li>
+						<li class="nav-item">
+						  	<a class="nav-link" href="#">OFFICE RELOCATION</a>
+						</li>
+						<li class="nav-item">
+						  	<a class="nav-link" href="#">OTHER SERVICES</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6 col-lg-3 mt-3 mt-lg-0">
+					<h3>Call Center</h3>
+					<h5>1-800-555-500<br> and get a free estimate</h5>
+					<h3 class="pt-5">Newsletter Sign Up</h3>
+					<div class="input-group">
+						<input type="email" class="form-control" placeholder="Your Email">
+						<span class="input-group-btn">
+						<button class="btn btn-secondary" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
 					</div>
 				</div>
 			</div>
@@ -1151,37 +1184,40 @@
 		<div class="footer-copyright">
 			<div class="container">
 				<div class="row">
-					<div class="col-6 col-xl-4">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="nav-link pl-0 pr-0">© Smartway Europe Limited</div>
-							</div>
-							<div class="col-lg-6"> <a class="nav-link pl-0 pr-0" rel="nofollow" href="terms-and-conditions/index.html" title="Terms & Conditions">Terms & Conditions</a> </div>
-						</div>
+					<div class="col-6 col-lg-6">
+						<div class="nav-link pl-0 pr-0">© Copyrights 2023. All Rights Reserved</div>
 					</div>
-					<div class="col-6 col-xl-8 d-flex justify-content-center justify-content-lg-end flex-column flex-lg-row">
-						<ul class="nav footer-domain-list">
-							<li class="nav-item"><a class="nav-link d-none d-xl-block" href="https://www.ecoparcel.de/" title="Ecoparcel.de" rel="nofollow">ecoparcel.de</a></li>
-							<li class="nav-item"><a class="nav-link d-none d-xl-block" href="https://www.ecoparcel.net/" title="Ecoparcel.net" rel="nofollow">ecoparcel.net</a></li>
-							<li class="nav-item"><a class="nav-link d-none d-xl-block" href="https://www.ecoparcel.it/" title="Ecoparcel.it" rel="nofollow">ecoparcel.it</a></li>
-							<li class="nav-item"><a class="nav-link d-none d-xl-block" href="https://www.ecoparcel.co.uk/" title="Ecoparcel.co.uk" rel="nofollow">ecoparcel.co.uk</a></li>
-							<li class="nav-item"><a class="nav-link d-none d-xl-block" href="https://www.ecoparcel.fr/" title="Ecoparcel.fr" rel="nofollow">ecoparcel.fr</a></li>
-							<li class="nav-item"><a class="nav-link d-none d-xl-block" href="https://www.ecoparcel.lt/" title="Ecoparcel.lt" rel="nofollow">ecoparcel.lt</a></li>
-							<li class="nav-item"><a class="nav-link font-weight-bold" href="../index.html" title="Ecoparcel.eu" rel="nofollow">ecoparcel.eu</a></li>
-						</ul>
-						<ul class="nav footer-social">
-							<li class="nav-item">
-								<a class="nav-link p-0" href="https://www.instagram.com/ecoparcel_europe/" title="Instagram Ecoparcel" rel="nofollow"> <img src="static/images/ig-icon.svg"> </a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link p-0 ml-3 mr-3" href="https://facebook.com/ecoparcel/" title="Facebook Ecoparcel" rel="nofollow"> <img src="static/images/fb-icon.svg"> </a>
-							</li>
-						</ul>
+					<div class="col-6 col-lg-6 d-flex justify-content-center justify-content-lg-end flex-column flex-lg-row">
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
+	<div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="weight-modal-label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="weight-modal-label">Login</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<input type='hidden' name='csrfmiddlewaretoken' value='Y0zLOgs0HSP5HXlAV83uc6VF4Bb8syuS' />
+						<div class="form-group" style="margin-bottom: 32px">
+							<input id="id_email" name="email" type="email" class="form-control " placeholder="E-mail"> </div>
+						<div class="form-group" style="margin-bottom: 36px">
+							<input id="id_password" name="password" type="password" class="form-control " placeholder="Password">
+							<a href="/en/auth/password/recover/" class="forgot-link text-muted" rel="nofollow">Forgot password?</a>
+						</div>
+						<div class="form-group d-flex justify-content-between mb-5">
+							<button onclick="ajaxLogin()" type="button" class="btn btn-primary" style="flex-grow:1;margin-right:25px;">Login</button>
+							<a href="register.html" class="btn btn-secondary" style="flex-grow:1;">Register</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="page-loader">
 		<div class="lds-ellipsis">
 			<div></div>
